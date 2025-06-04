@@ -16,5 +16,11 @@
     "summary": "Send this email to tenants who need a new sampling kit.",
     "tags": ["Email", "Tenants", "Lead", "Reply"],
     "copyable-message": "Hi V_1,\n\nSorry to hear that! The kit we sent must have went missing in the post.\n\nWe'll send out a replacement kit as soon as we can; it should be with you soon.\n\nJust fill the empty bottles with water, pop them back in the box, and send the kit back to us using the included pre-paid returns label.\n\nThanks for getting back to us!\n\nAll the best,\n"
+  },
+  {
+    "name": "Certify - Email Received - Sampling Kit Not Received, To Resend",
+    "summary": "Add this comment to certify if the tenant replies saying they didn't receive a sampling kit.",
+    "tags": ["Certify", "Tenants"],
+    "copyable-message": "The tenant replied to my email say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit. - V_1"
   }
 ]
