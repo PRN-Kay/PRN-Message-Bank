@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💬 PRN Message Bank</title>
+<style>
+    :root {
+        --bg-primary: #131313;
+        --bg-secondary: #1e1e1e;
+        --bg-card: #2a2a2a;
+        --text-primary: #ffffff;
+        --text-secondary: #e0e0e0;
+        --text-muted: #b0b0b0;
+        --primary-accent: #0cffd2;
+        --secondary-accent: #0beec1;
+        --border-color: #404040;
+        --shadow: rgba(0, 0, 0, 0.3);
+        --glow-primary: #0cffd269;
+        --glow-secondary: #0cffd269;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        min-height: 100vh;
+        animation: fadeIn 0.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+        animation: slideInFromTop 0.8s ease-out 0.2s both;
+    }
+
+    @keyframes slideInFromTop {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: var(--primary-accent);
+        transition: all 0.3s ease;
+        text-shadow: 0 0 20px var(--glow-primary);
+    }
+
+    h1:hover {
+        transform: scale(1.05);
+        text-shadow: 0 0 30px var(--glow-primary);
+        filter: brightness(1.1);
+    }
+
+    .subtitle {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+
+    .subtitle:hover {
+        color: var(--text-primary);
+    }
+
+    .controls {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        animation: slideInFromLeft 0.8s ease-out 0.4s both;
+    }
+
+    @keyframes slideInFromLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .search-input, .filter-select {
+        flex: 1;
+        min-width: 200px;
+        padding: 12px 16px;
+        background-color: var(--bg-card);
+        border: 2px solid var(--border-color);
+        border-radius: 8px;
+        color: var(--text-primary);
+        font-size: 16px;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .search-input:hover, .filter-select:hover {
+        border-color: var(--primary-accent);
+        box-shadow: 0 0 15px rgba(235, 185, 35, 0.1);
+        transform: translateY(-1px);
+    }
+
+    .search-input:focus, .filter-select:focus {
+        outline: none;
+        border-color: var(--primary-accent);
+        box-shadow: 0 0 0 3px rgba(235, 185, 35, 0.1), 0 0 20px var(--glow-primary);
+        transform: translateY(-2px);
+    }
+
+    .search-input::placeholder {
+        color: var(--text-muted);
+        transition: color 0.3s ease;
+    }
+
+    .search-input:focus::placeholder {
+        color: var(--text-secondary);
+    }
+
+    .messages-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        animation: slideInFromBottom 0.8s ease-out 0.6s both;
+    }
+
+    @keyframes slideInFromBottom {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .message-card {
+        background-color: var(--bg-card);
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        animation: cardSlideIn 0.6s ease-out both;
+    }
+
+    @keyframes cardSlideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    .message-card:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 12px 35px var(--shadow), 0 0 25px var(--glow-primary);
+        border-color: var(--primary-accent);
+    }
+
+    .message-card:active {
+        transform: translateY(-2px) scale(1.01);
+        transition: all 0.1s ease;
+    }
+
+    .message-card.expanded {
+        grid-column: 1 / -1;
+        cursor: default;
+        transform: none;
+        animation: expandCard 0.5s ease-out;
+        box-shadow: 0 8px 40px var(--shadow), 0 0 30px var(--glow-primary);
+        border-color: var(--primary-accent);
+    }
+
+    @keyframes expandCard {
+        from {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.02);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .message-card.expanded:hover {
+        transform: none;
+    }
+
+    .card-header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+        transition: all 0.3s ease;
+    }
+
+    .card-content {
+        flex: 1;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: var(--text-primary);
+        transition: all 0.3s ease;
+    }
+
+    .message-card:hover .card-title {
+        color: var(--primary-accent);
+        text-shadow: 0 0 10px var(--glow-primary);
+    }
+
+    .card-summary {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        transition: color 0.3s ease;
+    }
+
+    .message-card:hover .card-summary {
+        color: var(--text-primary);
+    }
+
+    .copy-btn {
+        background-color: var(--primary-accent);
+        color: var(--bg-primary);
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        min-width: 80px;
+        min-height: 48px;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 15px #0cffd269;
+    }
+
+    .copy-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .copy-btn:hover::before {
+        left: 100%;
+    }
+
+    .copy-btn:hover {
+        background-color: #d4a520;
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 8px 25px rgba(235, 185, 35, 0.4);
+    }
+
+    .copy-btn:active {
+        transform: translateY(0) scale(0.98);
+        box-shadow: 0 2px 10px rgba(235, 185, 35, 0.3);
+    }
+
+    .expanded-content {
+        padding: 0 20px 20px;
+        display: none;
+        overflow: hidden;
+    }
+
+    .message-card.expanded .expanded-content {
+        display: block;
+        animation: slideDown 0.5s ease-out;
+    }
+
+    .message-card.collapsing .expanded-content {
+        animation: slideUp 0.4s ease-in;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            max-height: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            max-height: 1000px;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 1;
+            max-height: 1000px;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            max-height: 0;
+            transform: translateY(-20px);
+        }
+    }
+
+    .variables-section {
+        margin-bottom: 20px;
+        animation: fadeInUp 0.6s ease-out 0.2s both;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .variables-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: var(--primary-accent);
+        transition: all 0.3s ease;
+        text-shadow: 0 0 10px var(--glow-primary);
+    }
+
+    .variables-title:hover {
+        transform: translateX(5px);
+        text-shadow: 0 0 15px var(--glow-primary);
+    }
+
+    .variable-input {
+        width: 100%;
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        background-color: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        color: var(--text-primary);
+        font-size: 14px;
+        transition: all 0.3s ease;
+        animation: slideInFromRight 0.5s ease-out both;
+    }
+
+    @keyframes slideInFromRight {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .variable-input:hover {
+        border-color: var(--primary-accent);
+        box-shadow: 0 0 10px rgba(235, 185, 35, 0.1);
+    }
+
+    .variable-input:focus {
+        outline: none;
+        border-color: var(--secondary-accent);
+        box-shadow: 0 0 0 2px rgba(96, 188, 27, 0.2), 0 0 15px var(--glow-secondary);
+        transform: scale(1.02);
+    }
+
+    .variable-input::placeholder {
+        color: var(--text-muted);
+        transition: color 0.3s ease;
+    }
+
+    .variable-input:focus::placeholder {
+        color: var(--text-secondary);
+    }
+
+    .message-text {
+        background-color: var(--bg-secondary);
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        word-break: break-word;
+        transition: all 0.3s ease;
+        animation: fadeInScale 0.6s ease-out 0.3s both;
+        border: 1px solid var(--border-color);
+    }
+
+    @keyframes fadeInScale {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .message-text:hover {
+        border-color: var(--primary-accent);
+        box-shadow: 0 0 20px rgba(235, 185, 35, 0.1);
+        transform: scale(1.01);
+    }
+
+    .tags-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 15px;
+        animation: fadeInUp 0.6s ease-out 0.4s both;
+    }
+
+    .tag {
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--bg-primary);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        animation: tagBounceIn 0.5s ease-out both;
+    }
+
+    @keyframes tagBounceIn {
+        from {
+            opacity: 0;
+            transform: scale(0.3) rotate(10deg);
+        }
+        50% {
+            transform: scale(1.1) rotate(-5deg);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+        }
+    }
+
+    .tag:nth-child(1) { animation-delay: 0.1s; }
+    .tag:nth-child(2) { animation-delay: 0.2s; }
+    .tag:nth-child(3) { animation-delay: 0.3s; }
+    .tag:nth-child(4) { animation-delay: 0.4s; }
+    .tag:nth-child(5) { animation-delay: 0.5s; }
+
+    .tag:hover {
+        transform: translateY(-2px) scale(1.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .tag:active {
+        transform: translateY(0) scale(1.05);
+    }
+
+    .tag:nth-child(odd) {
+        background-color: var(--primary-accent);
+    }
+
+    .tag:nth-child(even) {
+        background-color: var(--secondary-accent);
+    }
+
+    .tag:nth-child(3n) {
+        background-color: #ff6b6b;
+    }
+
+    .tag:nth-child(4n) {
+        background-color: #4ecdc4;
+    }
+
+    .tag:nth-child(5n) {
+        background-color: #45b7d1;
+    }
+
+    .expanded-footer {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 15px;
+        border-top: 1px solid var(--border-color);
+        animation: fadeInUp 0.6s ease-out 0.5s both;
+    }
+
+    .no-results {
+        text-align: center;
+        padding: 40px;
+        color: var(--text-muted);
+        font-size: 1.1rem;
+        animation: fadeInScale 0.8s ease-out;
+    }
+
+    /* Pulse animation for loading states */
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+    }
+
+    .loading {
+        animation: pulse 1.5s infinite;
+    }
+
+    /* Shake animation for error states */
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+        20%, 40%, 60%, 80% { transform: translateX(5px); }
+    }
+
+    .error {
+        animation: shake 0.5s ease-in-out;
+    }
+
+    /* Glow effect for success states */
+    @keyframes glow {
+        0%, 100% {
+            box-shadow: 0 0 5px var(--glow-secondary);
+        }
+        50% {
+            box-shadow: 0 0 20px var(--glow-secondary);
+        }
+    }
+
+    .success {
+        animation: glow 1s ease-in-out;
+    }
+
+    /* Staggered animations for cards */
+    .message-card:nth-child(1) { animation-delay: 0.1s; }
+    .message-card:nth-child(2) { animation-delay: 0.2s; }
+    .message-card:nth-child(3) { animation-delay: 0.3s; }
+    .message-card:nth-child(4) { animation-delay: 0.4s; }
+    .message-card:nth-child(5) { animation-delay: 0.5s; }
+    .message-card:nth-child(6) { animation-delay: 0.6s; }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .controls {
+            flex-direction: column;
+        }
+
+        .search-input, .filter-select {
+            min-width: unset;
+        }
+
+        .messages-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .card-header {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .copy-btn {
+            align-self: flex-end;
+            margin-top: 10px;
+        }
+
+        .message-card:hover {
+            transform: translateY(-2px) scale(1.01);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .card-header {
+            padding: 15px;
+        }
+
+        .expanded-content {
+            padding: 0 15px 15px;
+        }
+
+        h1:hover {
+            transform: scale(1.02);
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-1px) scale(1.03);
+        }
+    }
+
+    /* Reduce motion for users who prefer it */
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PRN Message Bank</h1>
+            <p class="subtitle">Quickly customise and copy multi-variable messages</p>
+        </header>
+
+        <section class="controls">
+            <input type="text" class="search-input" placeholder="Search messages..." id="searchInput">
+            <select class="filter-select" id="filterSelect">
+                <option value="">All Tags</option>
+            </select>
+        </section>
+
+        <main class="messages-grid" id="messagesGrid">
+            <!-- Messages will be populated here -->
+        </main>
+
+        <div class="no-results" id="noResults" style="display: none;">
+            No messages found matching your criteria.
+        </div>
+    </div>
+
+    <script>
+        // Sample data - in production, this would be loaded from Assets/messages.json
+        const sampleMessages = [
+            {
+                "name": "Make an App Prompt",
+                "summary": "An AI prompt preconfigured for personal preference",
+                "tags": ["AI Prompt", "Programming"],
+                "copyable-message": "Create a minimalistic darkmode HTML app, with V_1 accent colours, with the purpose of V_2"
+            },
+            {
+                "name": "Email Template",
+                "summary": "Professional email template for client communication",
+                "tags": ["Email", "Business", "Communication"],
+                "copyable-message": "Dear V_1,\n\nI hope this email finds you well. I wanted to follow up regarding V_2. Please let me know if you need any V_3.\n\nBest regards,\nV_4"
+            },
+            {
+                "name": "Code Review Request",
+                "summary": "Template for requesting code reviews",
+                "tags": ["Programming", "Code Review"],
+                "copyable-message": "Hi V_1,\n\nCould you please review my V_2 implementation? The main changes include V_3. I'm particularly concerned about V_4.\n\nThanks!"
+            }
+        ];
+
+        let messages = [];
+        let filteredMessages = [];
+        let expandedCard = null;
+
+        // Initialize the app
+        async function init() {
+            try {
+                // Try to load from Assets/messages.json
+                const response = await fetch('Assets/messages.json');
+                if (response.ok) {
+                    messages = await response.json();
+                } else {
+                    throw new Error('Could not load messages.json');
+                }
+            } catch (error) {
+                console.log('Using sample data as messages.json is not available');
+                messages = sampleMessages;
+            }
+
+            // Add unique IDs to messages
+            messages = messages.map((msg, index) => ({ ...msg, id: index }));
+            filteredMessages = [...messages];
+            populateTagFilter();
+            renderMessages();
+            setupEventListeners();
+        }
+
+        // Extract variables from message text
+        function extractVariables(text) {
+            const matches = text.match(/V_\d+/g);
+            return matches ? [...new Set(matches)].sort() : [];
+        }
+
+        // Replace variables in text with user input
+        function replaceVariables(text, messageId) {
+            const variables = extractVariables(text);
+            let result = text;
+            
+            variables.forEach(variable => {
+                const input = document.getElementById(`var-${messageId}-${variable}`);
+                if (input && input.value.trim()) {
+                    result = result.replace(new RegExp(variable, 'g'), input.value.trim());
+                }
+            });
+            return result;
+        }
+
+        // Populate tag filter dropdown
+        function populateTagFilter() {
+            const allTags = new Set();
+            messages.forEach(msg => {
+                if (Array.isArray(msg.tags)) {
+                    msg.tags.forEach(tag => allTags.add(tag));
+                }
+            });
+
+            const filterSelect = document.getElementById('filterSelect');
+            filterSelect.innerHTML = '<option value="">All Tags</option>';
+            
+            [...allTags].sort().forEach(tag => {
+                const option = document.createElement('option');
+                option.value = tag;
+                option.textContent = tag;
+                filterSelect.appendChild(option);
+            });
+        }
+
+        // Filter messages based on search and tag
+        function filterMessages() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const selectedTag = document.getElementById('filterSelect').value;
+
+            filteredMessages = messages.filter(msg => {
+                const matchesSearch = !searchTerm || 
+                    msg.name.toLowerCase().includes(searchTerm) ||
+                    msg.summary.toLowerCase().includes(searchTerm) ||
+                    (Array.isArray(msg.tags) && msg.tags.some(tag => 
+                        tag.toLowerCase().includes(searchTerm)
+                    ));
+
+                const matchesTag = !selectedTag || 
+                    (Array.isArray(msg.tags) && msg.tags.includes(selectedTag));
+
+                return matchesSearch && matchesTag;
+            });
+
+            renderMessages();
+        }
+
+        // Render message cards
+        function renderMessages() {
+            const grid = document.getElementById('messagesGrid');
+            const noResults = document.getElementById('noResults');
+
+            if (filteredMessages.length === 0) {
+                grid.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            
+            grid.innerHTML = filteredMessages.map(msg => {
+                const variables = extractVariables(msg['copyable-message']);
+                const tagsHtml = Array.isArray(msg.tags) ? 
+                    msg.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : '';
+
+                return `
+                    <div class="message-card" data-message-id="${msg.id}">
+                        <div class="card-header">
+                            <div class="card-content">
+                                <h3 class="card-title">${msg.name}</h3>
+                                <p class="card-summary">${msg.summary}</p>
+                            </div>
+                            <button class="copy-btn" onclick="copyMessage(${msg.id}, event)">Copy</button>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="message-text" id="message-preview-${msg.id}">${msg['copyable-message']}</div>
+                            ${variables.length > 0 ? `
+                                <div class="variables-section">
+                                    <h4 class="variables-title">Variables</h4>
+                                    ${variables.map(variable => `
+                                        <input type="text" 
+                                               class="variable-input" 
+                                               id="var-${msg.id}-${variable}" 
+                                               placeholder="Enter value for ${variable}"
+                                               oninput="updateMessagePreview(${msg.id})">
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+                            <div class="tags-container">${tagsHtml}</div>
+                            <div class="expanded-footer">
+                                <button class="copy-btn" onclick="copyMessage(${msg.id}, event)">Copy Message</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Update message preview with variable substitution
+        function updateMessagePreview(messageId) {
+            const msg = messages.find(m => m.id === messageId);
+            if (!msg) return;
+            
+            const previewElement = document.getElementById(`message-preview-${messageId}`);
+            if (previewElement) {
+                previewElement.textContent = replaceVariables(msg['copyable-message'], messageId);
+            }
+        }
+
+        // Copy message to clipboard
+        async function copyMessage(messageId, event) {
+            event.stopPropagation();
+            
+            const msg = messages.find(m => m.id === messageId);
+            if (!msg) return;
+            
+            const finalMessage = replaceVariables(msg['copyable-message'], messageId);
+            
+            try {
+                await navigator.clipboard.writeText(finalMessage);
+                
+                // Visual feedback
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = 'Copied!';
+                btn.style.backgroundColor = '#60bc1b';
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.backgroundColor = '';
+                }, 1500);
+            } catch (error) {
+                console.error('Failed to copy:', error);
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = finalMessage;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+            }
+        }
+
+        // Toggle card expansion
+        function toggleCard(messageId) {
+            const cards = document.querySelectorAll('.message-card');
+            const clickedCard = document.querySelector(`[data-message-id="${messageId}"]`);
+            
+            if (expandedCard && expandedCard !== clickedCard) {
+                expandedCard.classList.remove('expanded');
+            }
+            
+            if (clickedCard.classList.contains('expanded')) {
+                clickedCard.classList.remove('expanded');
+                expandedCard = null;
+            } else {
+                clickedCard.classList.add('expanded');
+                expandedCard = clickedCard;
+                updateMessagePreview(messageId);
+            }
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            const searchInput = document.getElementById('searchInput');
+            const filterSelect = document.getElementById('filterSelect');
+            
+            searchInput.addEventListener('input', filterMessages);
+            filterSelect.addEventListener('change', filterMessages);
+            
+            // Add click handlers to message cards
+            document.addEventListener('click', (e) => {
+                const card = e.target.closest('.message-card');
+                if (card && !e.target.classList.contains('copy-btn') && !e.target.classList.contains('variable-input')) {
+                    const messageId = parseInt(card.dataset.messageId);
+                    toggleCard(messageId);
+                }
+            });
+        }
+
+        // Initialize app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
