@@ -39,7 +39,7 @@
     "name": "Internal - Annual Leave Request",
     "summary": "Use this to request annual leave",
     "tags": ["Email", "Internal"],
-    "copyable-message": "Hi Paul,\n\nI’d like to request annual leave from V_1 to V_2, starting back on V_3.\n\nLet me know if this is alright.\n\nCheers,"
+    "copyable-message": "Hi Paul,\n\nI’d like to request annual leave from V_1 - V_2, starting back on V_3.\n\nLet me know if this is alright.\n\nCheers,"
   }
 ]
 
