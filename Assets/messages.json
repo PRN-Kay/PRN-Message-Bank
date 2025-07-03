@@ -126,6 +126,12 @@
     "copyable-message": "Phoned the tenant to ask about the sampling kit, and learned that they didn't collect it from the Delivery Office on time, so I told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
   },
   {
+    "name": "Certify - Emailed Tenant for Delivery Timeframe or Alternative Address",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Email"],
+    "copyable-message": "Phoned tenant to chase about sampling kit and they didn't receive it due to failed delivery because the tenant wasn't home. Sent an email asking for a suitable delivery timeframe, or an alternative delivery address. (KH)"
+  },
+  {
     "name": "Certify - Texted Tenant - Kit Uncollected",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Text"],
