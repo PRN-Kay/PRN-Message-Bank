@@ -72,6 +72,12 @@
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
   },
   {
+    "name": "Certify - Tenant Called Wanting Certificate.",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Callback", "Tenant Request"],
+    "copyable-message": "Tenant called us to say he wants to receive his certificate, so I've checked the Certificates box so he can receive them. (KH)"
+  },
+  {
     "name": "Certify - Tenant Called Back, Did Scottish Water Test, Will Look for Our Kit to Send Us.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Callback", "Will Look for Kit"],
