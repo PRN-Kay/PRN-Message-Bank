@@ -42,6 +42,12 @@
     "copyable-message": "The tenant replied to my email say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
   },
   {
+    "name": "Certify - No Phone - Email Sent Chasing Sampling Kits",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Email", "Call Failure"],
+    "copyable-message": "There is no phone number available for the tenant, so I've sent an email chasing up the sampling kits. (KH)"
+  },
+  {
     "name": "Certify - Replacement Kit Despatched",
     "summary": "Add this comment to certify when despatching a replacement sampling kit.",
     "tags": ["Certify", "Tenants"],
