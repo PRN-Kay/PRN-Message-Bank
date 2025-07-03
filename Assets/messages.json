@@ -66,6 +66,12 @@
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
   },
   {
+    "name": "Certify - Tenant Called Back, Did Scottish Water Test, Will Look for Our Kit to Send Us.",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Callback", "Will Look for Kit"],
+    "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
+  },
+  {
     "name": "Internal - Annual Leave Request",
     "summary": "Use this to request annual leave",
     "tags": ["Email", "Internal"],
