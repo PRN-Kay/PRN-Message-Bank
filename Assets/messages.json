@@ -96,6 +96,12 @@
     "copyable-message": "Texted the tenant to tell them the sampling kit was returned to us as Uncollected from Delivery Office, and told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
   },
   {
+    "name": "Certify - Uncollected Delivery - Tenants Phone Off - Sent Text",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Text"],
+    "copyable-message": "Tried phoning the tenent but the automated voice told me 'this person's phone is switched off, please send a text'. Sent a text to inform them of the failed delivery, and that they should ensure they can receive the delivery. (KH)"
+  },
+  {
     "name": "Internal - Annual Leave Request",
     "summary": "Use this to request annual leave",
     "tags": ["Email", "Internal"],
