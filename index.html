@@ -112,6 +112,30 @@
         }
     }
 
+
+    
+    .time-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.95);
+            padding: 8px 16px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            font-size: 14px;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        .time-option input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #667eea;
+        }
+
+    
+
     .search-input, .filter-select {
         flex: 1;
         min-width: 200px;
@@ -661,6 +685,10 @@
             <select class="filter-select" id="filterSelect">
                 <option value="">All Tags</option>
             </select>
+            <label class="time-option">
+                <input type="checkbox" id="addTimeCheckbox">
+                Add Time
+            </label>
         </section>
 
         <main class="messages-grid" id="messagesGrid">
@@ -722,13 +750,21 @@
             setupEventListeners();
         }
 
+        // Get current time in HH:MM format
+        function getCurrentTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            return `${hours}:${minutes}`;
+        }
+
         // Extract variables from message text
         function extractVariables(text) {
             const matches = text.match(/V_\d+/g);
             return matches ? [...new Set(matches)].sort() : [];
         }
 
-        // Replace variables in text with user input
+        // Replace variables in text with user input and optionally add time
         function replaceVariables(text, messageId) {
             const variables = extractVariables(text);
             let result = text;
@@ -739,6 +775,13 @@
                     result = result.replace(new RegExp(variable, 'g'), input.value.trim());
                 }
             });
+
+            // Add time if checkbox is checked
+            const addTimeCheckbox = document.getElementById('addTimeCheckbox');
+            if (addTimeCheckbox && addTimeCheckbox.checked) {
+                result += ` - ${getCurrentTime()}`;
+            }
+
             return result;
         }
 
@@ -835,7 +878,7 @@
             }).join('');
         }
 
-        // Update message preview with variable substitution
+        // Update message preview with variable substitution and time
         function updateMessagePreview(messageId) {
             const msg = messages.find(m => m.id === messageId);
             if (!msg) return;
@@ -903,9 +946,18 @@
         function setupEventListeners() {
             const searchInput = document.getElementById('searchInput');
             const filterSelect = document.getElementById('filterSelect');
+            const addTimeCheckbox = document.getElementById('addTimeCheckbox');
             
             searchInput.addEventListener('input', filterMessages);
             filterSelect.addEventListener('change', filterMessages);
+            
+            // Update previews when time checkbox is toggled
+            addTimeCheckbox.addEventListener('change', () => {
+                if (expandedCard) {
+                    const messageId = parseInt(expandedCard.dataset.messageId);
+                    updateMessagePreview(messageId);
+                }
+            });
             
             // Add click handlers to message cards
             document.addEventListener('click', (e) => {
