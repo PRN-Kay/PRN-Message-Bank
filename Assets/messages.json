@@ -1,24 +1,24 @@
 [
 {
-    "name": "Tenant - Lead Test Requirement",
+    "name": "Email Tenant - Lead Test Requirement",
     "summary": "Send this email to tenants to inform them of the incoming water sampling kit.",
     "tags": ["Lead", "Email", "Tenants"],
     "copyable-message": "Good V_1,\n\nI am emailing you to advise that you will shortly receive a sampling kit from PRN Water Services in the post. The purpose of this sampling kit is to collect water samples from your home, and then post them back to our laboratory so that we can test the water for lead contents.\n\nYour letting agents, V_2, have employed us to carry out the lead testing for their properties. Accordingly, please could you collect water samples by following the instruction manual found inside the kit and post them back to us using the included pre-paid returns label as soon as possible. A video guide on how to collect the samples can be viewed below:\n\nhttps://youtu.be/S3yWIWTO8TQ\n\nThis testing is a one-off requirement and has been implemented as a result of the Scottish Government updating the Repairing Standard, where rental properties in Scotland built before 1970 now need their drinking water tested for traces of lead. You can find more information on the legislation by visiting our website:\n\nhttps://www.prnwaterservices.com/the-legislation-information\n\nIf you have any questions or concerns, please do not hesitate to reach out to us."
 },
   {
-    "name": "Tenant - Sample Return Reminder",
+    "name": "Email Tenant - Sample Return Reminder",
     "summary": "Send this email to tenants to remind them to send their water sampling kits back to us.",
     "tags": ["Email", "Tenants", "Lead"],
     "copyable-message": "Hi there,\n \nV_1 from PRN Water Services here. We’ve been instructed by your letting agents, V_2, to carry out a Lead Water Test at your rental property. A sampling kit was sent to you some time ago for this purpose.\n \nWe haven’t yet received your water samples at our laboratory yet, and would appreciate an update on when you expect to return them.\n \nIf you require a replacement sampling kit, just let us know and we’ll be happy to send one out.\n \nBest regards,\n"
   },
   {
-    "name": "Tenant Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
+    "name": "Email Tenant Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
     "summary": "Send this email to tenants who need a new sampling kit.",
     "tags": ["Email", "Tenants", "Lead", "Reply"],
     "copyable-message": "Hi V_1,\n\nSorry to hear that! The kit we sent must have went missing in the post.\n\nWe'll send out a replacement kit as soon as we can; it should be with you soon.\n\nJust fill the empty bottles with water, pop them back in the box, and send the kit back to us using the included pre-paid returns label.\n\nThanks for getting back to us!\n\nAll the best,\n"
   },
   {
-    "name": "Tenant Sent Kit But We Didn't Receive",
+    "name": "Email Tenant - Sent Kit But We Didn't Receive",
     "summary": "Send this email to tenants who sent a sampling kit if we haven't received it back yet.",
     "tags": ["Email", "Tenants", "Lead", "Reply"],
     "copyable-message": "Hi V_1,\n\nUnfortunately, we haven’t received your water samples at our lab—they may have gone missing in the post.\n\nAs these samples are required for your landlord’s records, we’ll be sending you a replacement water sampling kit this week. It should arrive with you shortly.\n\nIf you have any questions or need help with anything, just let us know — we’re happy to assist 😊\n\nAll the best,"
