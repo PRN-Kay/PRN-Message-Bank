@@ -30,6 +30,12 @@
     "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and they told me they've sent it recently. Will await receipt of package (KH)"
   },
   {
+    "name": "Certify - Phoned Tenant - Unsure - Asking Flatmates",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Lead", "Outbound Call"],
+    "copyable-message": "Phoned the tenant to chase about water sampling kit, and they weren't sure what happened to it, and they said they'd ask their flatmates. (KH)"
+  },
+  {
     "name": "Certify - Text Tenant Asking for Sample Kit Update",
     "summary": "Add this comment to certify when you text the tenant for an update regarding their sampling kit.",
     "tags": ["Text", "Tenants", "Lead"],
