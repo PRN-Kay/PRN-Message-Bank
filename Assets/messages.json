@@ -90,6 +90,12 @@
     "copyable-message": "Tenant called us to say he wants to receive his certificate, so I've checked the Certificates box so he can receive them. (KH)"
   },
   {
+    "name": "Certify - Inbound Tenant Call - No Knowledge of Delivery - Will Email Pic of Delivery",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Callback", "Inbound Call", "Email Required", "To Send Evidence"],
+    "copyable-message": "Tenant called back to say that they don't think they received the sampling kit. After checking Royal Mail, I confirmed that they did receive the sampling kit, and told them the date it was delivered. After further expressions of cluelessness, I said I'd send an Email with a picture of the sampling kit being delivered to their property in hopes it jogs their memory. (KH)"
+  },
+  {
     "name": "Certify - Inbound Tenant Call - Did Scottish Water Test, Will Look for Our Kit to Send Us.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Callback", "Will Look for Kit"],
