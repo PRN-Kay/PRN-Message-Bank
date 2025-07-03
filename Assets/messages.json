@@ -36,6 +36,30 @@
     "copyable-message": "Replacement Sampling kit sent out today - V_1"
   },
   {
+    "name": "Certify - Left a voicemail",
+    "summary": "Add this comment to certify if you left the tenant a voicemail.",
+    "tags": ["Certify", "Tenants", "Call Failure"],
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit (KH)."
+  },
+  {
+    "name": "Certify - Tenant Didn't Receive Kit",
+    "summary": "Add this comment to certify if the tenant didn't receive the kit.",
+    "tags": ["Certify", "Tenants", "Replacement Kit Needed"],
+    "copyable-message": "Phoned the tenant to chase them up about the sampling kit, and they said they didn't receive it. Replacement Needed. (KH)"
+  },
+  {
+    "name": "Certify - Tenant Will Send",
+    "summary": "Add this comment to certify if the tenant will send kit.",
+    "tags": ["Certify", "Tenants", "Sapling Kit Incoming"],
+    "copyable-message": "Phoned to chase about sampling kit, and they said they hadn't done it yet. Will send us the samples ASAP. (KH)"
+  },
+  {
+    "name": "Certify - Dial Tone. Sent Eamil.",
+    "summary": "Add this comment to certify if the phone went to a dial tone.",
+    "tags": ["Certify", "Tenants", "Call Failure"],
+    "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent a text. (KH)"
+  },
+  {
     "name": "Internal - Annual Leave Request",
     "summary": "Use this to request annual leave",
     "tags": ["Email", "Internal"],
