@@ -84,6 +84,12 @@
     "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
   },
   {
+    "name": "Certify - Kit Returned to Sender",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed"],
+    "copyable-message": "Returned to Sender (KH)"
+  },
+  {
     "name": "Internal - Annual Leave Request",
     "summary": "Use this to request annual leave",
     "tags": ["Email", "Internal"],
