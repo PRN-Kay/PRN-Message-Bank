@@ -96,7 +96,13 @@
     "copyable-message": "Returned to Sender (KH)"
   },
   {
-    "name": "Certify - Kit Uncollected - Text Sent",
+    "name": "Certify - Phoned Tenant - Kit Uncollected",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Call"],
+    "copyable-message": "Phoned the tenant to ask about the sampling kit, and learned that they didn't collect it from the Delivery Office on time, so I told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
+  },
+  {
+    "name": "Certify - Text Tenant - Kit Uncollected",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Text"],
     "copyable-message": "Texted the tenant to tell them the sampling kit was returned to us as Uncollected from Delivery Office, and told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
