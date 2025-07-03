@@ -27,19 +27,19 @@
     "name": "Certify - Text Tenant Asking for Sample Kit Update",
     "summary": "Add this comment to certify when you text the tenant for an update regarding their sampling kit.",
     "tags": ["Text", "Tenants", "Lead"],
-    "copyable-message": "Sent a text to the tenant asking for an update regarding returning their sampling kit asap."
+    "copyable-message": "Sent a text to the tenant asking for an update regarding returning their sampling kit asap. (KH)"
   },
   {
     "name": "Certify - Email Received - Sampling Kit Not Received, To Resend",
     "summary": "Add this comment to certify if the tenant replies saying they didn't receive a sampling kit.",
     "tags": ["Certify", "Tenants"],
-    "copyable-message": "The tenant replied to my email say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit - V_1"
+    "copyable-message": "The tenant replied to my email say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
   },
   {
     "name": "Certify - Replacement Kit Despatched",
     "summary": "Add this comment to certify when despatching a replacement sampling kit.",
     "tags": ["Certify", "Tenants"],
-    "copyable-message": "Replacement Sampling kit sent out today - V_1"
+    "copyable-message": "Replacement Sampling kit sent out today (KH)"
   },
   {
     "name": "Certify - Left a voicemail",
