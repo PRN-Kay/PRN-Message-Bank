@@ -24,6 +24,12 @@
     "copyable-message": "Hi V_1,\n\nUnfortunately, we haven’t received your water samples at our lab—they may have gone missing in the post.\n\nAs these samples are required for your landlord’s records, we’ll be sending you a replacement water sampling kit this week. It should arrive with you shortly.\n\nIf you have any questions or need help with anything, just let us know — we’re happy to assist 😊\n\nAll the best,"
   },
   {
+    "name": "Certify - Phoned Tenant - Sent Kit Recently - Awaiting Receipt",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Lead", "Kit Resent"],
+    "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and they told me they've sent it recently. Will await receipt of package (KH)"
+  },
+  {
     "name": "Certify - Text Tenant Asking for Sample Kit Update",
     "summary": "Add this comment to certify when you text the tenant for an update regarding their sampling kit.",
     "tags": ["Text", "Tenants", "Lead"],
