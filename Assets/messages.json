@@ -48,43 +48,43 @@
     "copyable-message": "Replacement Sampling kit sent out today (KH)"
   },
   {
-    "name": "Certify - Left a voicemail",
+    "name": "Certify - Phoned Tenant - Left a voicemail",
     "summary": "Add this comment to certify if you left the tenant a voicemail.",
     "tags": ["Certify", "Tenants", "Call Failure"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
   },
   {
-    "name": "Certify - Tenant Didn't Receive Kit",
+    "name": "Certify - Phoned Tenant - Tenant Didn't Receive Kit",
     "summary": "Add this comment to certify if the tenant didn't receive the kit.",
     "tags": ["Certify", "Tenants", "Replacement Kit Needed"],
     "copyable-message": "Phoned the tenant to chase them up about the sampling kit, and they said they didn't receive it. Replacement Needed. (KH)"
   },
   {
-    "name": "Certify - Tenant Will Send",
+    "name": "Certify - Phoned Tenant - Tenant Will Send",
     "summary": "Add this comment to certify if the tenant will send kit.",
     "tags": ["Certify", "Tenants", "Sapling Kit Incoming"],
     "copyable-message": "Phoned to chase about sampling kit, and they said they hadn't done it yet. Will send us the samples ASAP. (KH)"
   },
   {
-    "name": "Certify - Dial Tone. Sent Eamil.",
+    "name": "Certify - Phoned Tenant - Dial Tone. Sent Eamil.",
     "summary": "Add this comment to certify if the phone went to a dial tone.",
     "tags": ["Certify", "Tenants", "Call Failure"],
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
   },
   {
-    "name": "Certify - Number Not In Service.",
+    "name": "Certify - Phoned Tenant - Number Not In Service.",
     "summary": "Add this comment to certify if the phone number is noot is not in service.",
     "tags": ["Certify", "Tenants", "Call Failure"],
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
   },
   {
-    "name": "Certify - Tenant Called Wanting Certificate.",
+    "name": "Certify - Inbound Tenant Call - Tenant Called Wanting Certificate.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Callback", "Tenant Request"],
     "copyable-message": "Tenant called us to say he wants to receive his certificate, so I've checked the Certificates box so he can receive them. (KH)"
   },
   {
-    "name": "Certify - Tenant Called Back, Did Scottish Water Test, Will Look for Our Kit to Send Us.",
+    "name": "Certify - Inbound Tenant Call - Did Scottish Water Test, Will Look for Our Kit to Send Us.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Callback", "Will Look for Kit"],
     "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
@@ -102,7 +102,7 @@
     "copyable-message": "Phoned the tenant to ask about the sampling kit, and learned that they didn't collect it from the Delivery Office on time, so I told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
   },
   {
-    "name": "Certify - Text Tenant - Kit Uncollected",
+    "name": "Certify - Texted Tenant - Kit Uncollected",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Text"],
     "copyable-message": "Texted the tenant to tell them the sampling kit was returned to us as Uncollected from Delivery Office, and told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
