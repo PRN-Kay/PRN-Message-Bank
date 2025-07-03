@@ -12,7 +12,7 @@
     "copyable-message": "Hi there,\n \nV_1 from PRN Water Services here. We’ve been instructed by your letting agents, V_2, to carry out a Lead Water Test at your rental property. A sampling kit was sent to you some time ago for this purpose.\n \nWe haven’t yet received your water samples at our laboratory yet, and would appreciate an update on when you expect to return them.\n \nIf you require a replacement sampling kit, just let us know and we’ll be happy to send one out.\n \nBest regards,\n"
   },
   {
-    "name": "Email Tenant Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
+    "name": "Email Tenant - Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
     "summary": "Send this email to tenants who need a new sampling kit.",
     "tags": ["Email", "Tenants", "Lead", "Reply"],
     "copyable-message": "Hi V_1,\n\nSorry to hear that! The kit we sent must have went missing in the post.\n\nWe'll send out a replacement kit as soon as we can; it should be with you soon.\n\nJust fill the empty bottles with water, pop them back in the box, and send the kit back to us using the included pre-paid returns label.\n\nThanks for getting back to us!\n\nAll the best,\n"
@@ -23,6 +23,12 @@
     "tags": ["Email", "Tenants", "Lead", "Reply"],
     "copyable-message": "Hi V_1,\n\nUnfortunately, we haven’t received your water samples at our lab—they may have gone missing in the post.\n\nAs these samples are required for your landlord’s records, we’ll be sending you a replacement water sampling kit this week. It should arrive with you shortly.\n\nIf you have any questions or need help with anything, just let us know — we’re happy to assist 😊\n\nAll the best,"
   },
+{
+    "name": "Email Tenant - Redelivery After Tenant Not In for 1st Delivery",
+    "summary": "-",
+    "tags": ["Lead", "Email", "Tenants", "Followup", "Redelivery"],
+    "copyable-message": "Hi,\n\nKaelin from PRN Water Services here.\n\nI'm emailing you about the water sampling kit we sent you just over a month ago.\n\nAfter digging deeper into our Royal Mail deliveries, I've located our delivery to your address, and I've discovered that delivery was attempted on [Delivery Attempt Date] and failed because 'there didn't seem to be anyone in'.\n\nSince testing your water system for lead is a legal requirement, we'll need to send out a replacement water sampling kit.\n\nBefore we do, to avoid having the same problem, I wonder if you could either\n(a) confirm a timeframe that you're likely to be at home to accept the delivery, or\n(b) provide us with an alternative delivery address (eg: your workplace, a friends' address, a neighbours' address, a family members address, etc)?"
+},
   {
     "name": "Certify - Phoned Tenant - Sent Kit Recently - Awaiting Receipt",
     "summary": "-",
