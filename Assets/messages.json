@@ -45,7 +45,7 @@
     "name": "Certify - Left a voicemail",
     "summary": "Add this comment to certify if you left the tenant a voicemail.",
     "tags": ["Certify", "Tenants", "Call Failure"],
-    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit (KH)."
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
   },
   {
     "name": "Certify - Tenant Didn't Receive Kit",
