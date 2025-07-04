@@ -55,7 +55,7 @@
     "name": "Certify - Phoned Tenant - Left a Voicemail - Text Next Working Day",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text"],
-    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day."
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
 },
 {
     "name": "Certify - Phoned Tenant - Declined Call - Sent Text",
