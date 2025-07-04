@@ -1,177 +1,181 @@
 [
+// Outbound Email Messages to Tenants
 {
     "name": "Email Tenant - Lead Test Requirement",
     "summary": "Send this email to tenants to inform them of the incoming water sampling kit.",
     "tags": ["Lead", "Outbound Email", "Tenants"],
     "copyable-message": "Good V_1,\n\nI am emailing you to advise that you will shortly receive a sampling kit from PRN Water Services in the post. The purpose of this sampling kit is to collect water samples from your home, and then post them back to our laboratory so that we can test the water for lead contents.\n\nYour letting agents, V_2, have employed us to carry out the lead testing for their properties. Accordingly, please could you collect water samples by following the instruction manual found inside the kit and post them back to us using the included pre-paid returns label as soon as possible. A video guide on how to collect the samples can be viewed below:\n\nhttps://youtu.be/S3yWIWTO8TQ\n\nThis testing is a one-off requirement and has been implemented as a result of the Scottish Government updating the Repairing Standard, where rental properties in Scotland built before 1970 now need their drinking water tested for traces of lead. You can find more information on the legislation by visiting our website:\n\nhttps://www.prnwaterservices.com/the-legislation-information\n\nIf you have any questions or concerns, please do not hesitate to reach out to us."
 },
-  {
+{
     "name": "Email Tenant - Sample Return Reminder",
     "summary": "Send this email to tenants to remind them to send their water sampling kits back to us.",
     "tags": ["Outbound Email", "Tenants", "Lead"],
-    "copyable-message": "Hi there,\n \nV_1 from PRN Water Services here. We’ve been instructed by your letting agents, V_2, to carry out a Lead Water Test at your rental property. A sampling kit was sent to you some time ago for this purpose.\n \nWe haven’t yet received your water samples at our laboratory yet, and would appreciate an update on when you expect to return them.\n \nIf you require a replacement sampling kit, just let us know and we’ll be happy to send one out.\n \nBest regards,\n"
-  },
-  {
+    "copyable-message": "Hi there,\n \nV_1 from PRN Water Services here. We've been instructed by your letting agents, V_2, to carry out a Lead Water Test at your rental property. A sampling kit was sent to you some time ago for this purpose.\n \nWe haven't yet received your water samples at our laboratory yet, and would appreciate an update on when you expect to return them.\n \nIf you require a replacement sampling kit, just let us know and we'll be happy to send one out.\n \nBest regards,\n"
+},
+{
     "name": "Email Tenant - Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
     "summary": "Send this email to tenants who need a new sampling kit.",
     "tags": ["Outbound Email", "Tenants", "Lead", "Reply"],
-    "copyable-message": "Hi V_1,\n\nSorry to hear that! The kit we sent must have went missing in the post.\n\nWe’ll arrange to send a replacement sampling kit to your address shortly so we can proceed with testing your water system for lead. Once it’s dispatched, you should receive a confirmation email from Royal Mail.\n\nPlease keep an eye out for a small blue rectangular cardboard box—it should arrive within a week.\n\n Once it arrives, just fill the empty bottles with water from the relevant taps in your property, pop them back in the box, and send the kit back to us using the included pre-paid returns label (stick the returns label over the label on top of the box).\n\nBest regards,\n\n"
-  },
-  {
+    "copyable-message": "Hi V_1,\n\nSorry to hear that! The kit we sent must have went missing in the post.\n\nWe'll arrange to send a replacement sampling kit to your address shortly so we can proceed with testing your water system for lead. Once it's dispatched, you should receive a confirmation email from Royal Mail.\n\nPlease keep an eye out for a small blue rectangular cardboard box—it should arrive within a week.\n\n Once it arrives, just fill the empty bottles with water from the relevant taps in your property, pop them back in the box, and send the kit back to us using the included pre-paid returns label (stick the returns label over the label on top of the box).\n\nBest regards,\n\n"
+},
+{
     "name": "Email Tenant - Sent Kit But We Didn't Receive",
     "summary": "Send this email to tenants who sent a sampling kit if we haven't received it back yet.",
     "tags": ["Outbound Email", "Tenants", "Lead", "Reply"],
-    "copyable-message": "Hi V_1,\n\nUnfortunately, we haven’t received your water samples at our lab—they may have gone missing in the post.\n\nAs these samples are required for your landlord’s records, we’ll be sending you a replacement water sampling kit this week. It should arrive with you shortly.\n\nIf you have any questions or need help with anything, just let us know — we’re happy to assist 😊\n\nAll the best,"
-  },
+    "copyable-message": "Hi V_1,\n\nUnfortunately, we haven't received your water samples at our lab—they may have gone missing in the post.\n\nAs these samples are required for your landlord's records, we'll be sending you a replacement water sampling kit this week. It should arrive with you shortly.\n\nIf you have any questions or need help with anything, just let us know — we're happy to assist 😊\n\nAll the best,"
+},
 {
     "name": "Email Tenant - Redelivery After Tenant Not In for 1st Delivery",
     "summary": "-",
     "tags": ["Lead", "Outbound Email", "Tenants", "Followup", "Redelivery"],
-    "copyable-message": "Hi,\n\nKaelin from PRN Water Services here.\n\nI'm emailing you about the water sampling kit we sent you just over a month ago.\n\nAfter digging deeper into our Royal Mail deliveries, I've located our delivery to your address, and I've discovered that delivery was attempted on [Delivery Attempt Date] and failed because 'there didn't seem to be anyone in'.\n\nSince testing your water system for lead is a legal requirement, we'll need to send out a replacement water sampling kit.\n\nBefore we do, to avoid having the same problem, I wonder if you could either\n(a) confirm a timeframe that you're likely to be at home to accept the delivery, or\n(b) provide us with an alternative delivery address (eg: your workplace, a friends' address, a neighbours' address, a family members address, etc)?"
+    "copyable-message": "Hi,\n\nKay from PRN Water Services here.\n\nI'm emailing you about the water sampling kit we sent you just over a month ago.\n\nAfter digging deeper into our Royal Mail deliveries, I've located our delivery to your address, and I've discovered that delivery was attempted on [Delivery Attempt Date] and failed because 'there didn't seem to be anyone in'.\n\nSince testing your water system for lead is a legal requirement, we'll need to send out a replacement water sampling kit.\n\nBefore we do, to avoid having the same problem, I wonder if you could either\n(a) confirm a timeframe that you're likely to be at home to accept the delivery, or\n(b) provide us with an alternative delivery address (eg: your workplace, a friends' address, a neighbours' address, a family members address, etc)?"
 },
-  {
+
+// Certification Messages - Outbound Calls
+{
     "name": "Certify - Phoned Tenant - Sent Kit Recently - Awaiting Receipt",
     "summary": "-",
     "tags": ["Certify", "Outbound Call", "Tenants", "Lead", "Kit Resent"],
     "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and they told me they've sent it recently. Will await receipt of package (KH)"
-  },
-  {
+},
+{
     "name": "Certify - Phoned Tenant - Unsure - Asking Flatmates",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Lead", "Outbound Call"],
     "copyable-message": "Phoned the tenant to chase about water sampling kit, and they weren't sure what happened to it, and they said they'd ask their flatmates. (KH)"
-  },
-  {
-    "name": "Certify - Text Tenant Asking for Sample Kit Update",
-    "summary": "Add this comment to certify when you text the tenant for an update regarding their sampling kit.",
-    "tags": ["Outbound Text", "Tenants", "Lead"],
-    "copyable-message": "Sent a text to the tenant asking for an update regarding returning their sampling kit asap. (KH)"
-  },
-  {
-    "name": "Certify - Email Received - Sampling Kit Not Received, To Resend",
-    "summary": "Add this comment to certify if the tenant replies saying they didn't receive a sampling kit.",
-    "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email to say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
-  },
-  {
-    "name": "Certify - Email Received - Will Send ASAP",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email saying she hasn't sent us the samples yet, but that she'll do it ASAP. (KH)"
-  },
-  {
-    "name": "Certify - No Phone - Email Sent Chasing Sampling Kits",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Email", "Call Failure"],
-    "copyable-message": "There is no phone number available for the tenant, so I've sent an email chasing up the sampling kits. (KH)"
-  },
-  {
-    "name": "Certify - Replacement Kit Despatched",
-    "summary": "Add this comment to certify when despatching a replacement sampling kit.",
-    "tags": ["Certify", "Tenants"],
-    "copyable-message": "Replacement Sampling kit sent out today (KH)"
-  },
-  {
+},
+{
     "name": "Certify - Phoned Tenant - Left a voicemail",
     "summary": "Add this comment to certify if you left the tenant a voicemail.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
-  },
-  {
+},
+{
     "name": "Certify - Phoned Tenant - Declined Call - Sent Text",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text"],
     "copyable-message": "Phoned the tenant to chase them up about the sampling kit but they declined the call, so I sent them a text. (KH)."
-  },
-  {
+},
+{
     "name": "Certify - Phoned Tenant - Tenant Didn't Receive Kit",
     "summary": "Add this comment to certify if the tenant didn't receive the kit.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Replacement Kit Needed"],
     "copyable-message": "Phoned the tenant to chase them up about the sampling kit, and they said they didn't receive it. Replacement Needed. (KH)"
-  },
-  {
+},
+{
     "name": "Certify - Phoned Tenant - Tenant Will Send",
     "summary": "Add this comment to certify if the tenant will send kit.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Sapling Kit Incoming"],
     "copyable-message": "Phoned to chase about sampling kit, and they said they hadn't done it yet. Will send us the samples ASAP. (KH)"
-  },
-  {
+},
+{
     "name": "Certify - Phoned Tenant - Dial Tone. Sent Eamil.",
     "summary": "Add this comment to certify if the phone went to a dial tone.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure"],
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
-  },
-  {
+},
+{
     "name": "Certify - Phoned Tenant - Number Not In Service - Emailed Tenant.",
     "summary": "Add this comment to certify if the phone number is noot is not in service.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Outbound Email", "Call Failure"],
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
-  },
-  {
-    "name": "Certify - Inbound Tenant Call - Tenant Called Wanting Certificate.",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Tenant Request"],
-    "copyable-message": "Tenant called us to say he wants to receive his certificate, so I've checked the Certificates box so he can receive them. (KH)"
-  },
-  {
-    "name": "Certify - Inbound Tenant Call - Will send ASAP",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Will Send Kit"],
-    "copyable-message": "Tenant called us and said they'd send the samples back to us ASAP. (KH)"
-  },
-  {
-    "name": "Certify - Inbound Tenant Call - No Knowledge of Delivery - Will Email Pic of Delivery",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Email Required", "To Send Evidence"],
-    "copyable-message": "Tenant called back to say that they don't think they received the sampling kit. After checking Royal Mail, I confirmed that they did receive the sampling kit, and told them the date it was delivered. After further expressions of cluelessness, I said I'd send an Email with a picture of the sampling kit being delivered to their property in hopes it jogs their memory. (KH)"
-  },
-  {
-    "name": "Certify - Inbound Tenant Call - Did Scottish Water Test, Will Look for Our Kit to Send Us.",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Will Look for Kit"],
-    "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
-  },
-  {
-    "name": "Certify - Kit Returned to Sender",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed"],
-    "copyable-message": "Returned to Sender (KH)"
-  },
-  {
+},
+{
     "name": "Certify - Phoned Tenant - Kit Uncollected",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Call"],
     "copyable-message": "Phoned the tenant to ask about the sampling kit, and learned that they didn't collect it from the Delivery Office on time, so I told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
-  },
-  {
-    "name": "Certify - Emailed Tenant for Delivery Timeframe or Alternative Address",
+},
+
+// Certification Messages - Inbound Calls
+{
+    "name": "Certify - Inbound Tenant Call - Tenant Called Wanting Certificate.",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Email"],
-    "copyable-message": "Phoned tenant to chase about sampling kit and they didn't receive it due to failed delivery because the tenant wasn't home. Sent an email asking for a suitable delivery timeframe, or an alternative delivery address. (KH)"
-  },
-  {
+    "tags": ["Certify", "Tenants", "Inbound Call", "Tenant Request"],
+    "copyable-message": "Tenant called us to say he wants to receive his certificate, so I've checked the Certificates box so he can receive them. (KH)"
+},
+{
+    "name": "Certify - Inbound Tenant Call - Will send ASAP",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Call", "Will Send Kit"],
+    "copyable-message": "Tenant called us and said they'd send the samples back to us ASAP. (KH)"
+},
+{
+    "name": "Certify - Inbound Tenant Call - No Knowledge of Delivery - Will Email Pic of Delivery",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Call", "Email Required", "To Send Evidence"],
+    "copyable-message": "Tenant called back to say that they don't think they received the sampling kit. After checking Royal Mail, I confirmed that they did receive the sampling kit, and told them the date it was delivered. After further expressions of cluelessness, I said I'd send an Email with a picture of the sampling kit being delivered to their property in hopes it jogs their memory. (KH)"
+},
+{
+    "name": "Certify - Inbound Tenant Call - Did Scottish Water Test, Will Look for Our Kit to Send Us.",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Call", "Will Look for Kit"],
+    "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
+},
+
+// Certification Messages - Text Messages
+{
+    "name": "Certify - Text Tenant Asking for Sample Kit Update",
+    "summary": "Add this comment to certify when you text the tenant for an update regarding their sampling kit.",
+    "tags": ["Outbound Text", "Tenants", "Lead"],
+    "copyable-message": "Sent a text to the tenant asking for an update regarding returning their sampling kit asap. (KH)"
+},
+{
     "name": "Certify - Text Received - Sent Kit Back Recently - Awaiting Receipt",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
     "copyable-message": "The tenant replied to my text saying they posted the kit back to us recently. (KH)"
-  },
-  {
+},
+{
     "name": "Certify - Texted Tenant - Kit Uncollected",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Text"],
     "copyable-message": "Texted the tenant to tell them the sampling kit was returned to us as Uncollected from Delivery Office, and told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
-  },
-  {
+},
+{
     "name": "Certify - Uncollected Delivery - Tenants Phone Off - Sent Text",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Text"],
     "copyable-message": "Tried phoning the tenent but the automated voice told me 'this person's phone is switched off, please send a text'. Sent a text to inform them of the failed delivery, and that they should ensure they can receive the delivery. (KH)"
-  },
-  {
-    "name": "Internal - Annual Leave Request",
-    "summary": "Use this to request annual leave",
-    "tags": ["Email", "Internal"],
-    "copyable-message": "Hi Paul,\n\nI’d like to request annual leave from V_1 - V_2, starting back on V_3.\n\nLet me know if this is alright.\n\nCheers,"
-  }
-]
+},
 
+// Certification Messages - Email Related
+{
+    "name": "Certify - Email Received - Sampling Kit Not Received, To Resend",
+    "summary": "Add this comment to certify if the tenant replies saying they didn't receive a sampling kit.",
+    "tags": ["Certify", "Tenants", "Inbound Email"],
+    "copyable-message": "The tenant replied to my email to say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
+},
+{
+    "name": "Certify - Email Received - Will Send ASAP",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Email"],
+    "copyable-message": "The tenant replied to my email saying she hasn't sent us the samples yet, but that she'll do it ASAP. (KH)"
+},
+{
+    "name": "Certify - No Phone - Email Sent Chasing Sampling Kits",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Email", "Call Failure"],
+    "copyable-message": "There is no phone number available for the tenant, so I've sent an email chasing up the sampling kits. (KH)"
+},
+{
+    "name": "Certify - Emailed Tenant for Delivery Timeframe or Alternative Address",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Email"],
+    "copyable-message": "Phoned tenant to chase about sampling kit and they didn't receive it due to failed delivery because the tenant wasn't home. Sent an email asking for a suitable delivery timeframe, or an alternative delivery address. (KH)"
+},
+
+// Certification Messages - General
+{
+    "name": "Certify - Replacement Kit Despatched",
+    "summary": "Add this comment to certify when despatching a replacement sampling kit.",
+    "tags": ["Certify", "Tenants"],
+    "copyable-message": "Replacement Sampling kit sent out today (KH)"
+},
+{
+    "name": "Certify - Kit Returned to Sender",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed"],
+    "copyable-message": "Returned to Sender (KH)"
+}
+]
