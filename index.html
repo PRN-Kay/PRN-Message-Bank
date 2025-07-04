@@ -704,13 +704,16 @@
         let messages = [];
         let filteredMessages = [];
         let expandedCard = null;
-        // Add this configuration for colored words
+        // Word coloring configuration
         const coloredWordsConfig = {
-            "Phoned": "orange",
-            "Emailed": "cyan",
-            "Unsure": "red",
-            "Follow up": "pink",
-            "Certify": "yellow"
+            "Phoned": "red",
+            "Email": "cyan",
+            "Sent": "green",
+            "Tenant": "blue",
+            "Certify": "purple",
+            "Kit": "orange",
+            "Awaiting": "#ff6b6b",
+            "Lead": "#2ecc71"
             // Add more word-color mappings as needed
         };
 
@@ -751,12 +754,13 @@
             return matches ? [...new Set(matches)].sort() : [];
         }
 
-        // Apply color to specific words in the text
+        // Apply color to specific words in any text
         function applyWordColors(text) {
-            let result = text;
+            if (!text) return text;
+            let result = text.toString();
             for (const [word, color] of Object.entries(coloredWordsConfig)) {
-                const regex = new RegExp(`(${word})`, 'gi');
-                result = result.replace(regex, `<span style="color: ${color}; font-weight: bold;">$1</span>`);
+                const regex = new RegExp(`(^|\\s)(${word})(?=\\s|$|[.,!?])`, 'gi');
+                result = result.replace(regex, `$1<span style="color: ${color}; font-weight: bold;">$2</span>`);
             }
             return result;
         }
@@ -829,7 +833,7 @@
             renderMessages();
         }
 
-        // Render message cards
+        // Render message cards with colored words in all text elements
         function renderMessages() {
             const grid = document.getElementById('messagesGrid');
             const noResults = document.getElementById('noResults');
@@ -845,14 +849,14 @@
             grid.innerHTML = filteredMessages.map(msg => {
                 const variables = extractVariables(msg['copyable-message']);
                 const tagsHtml = Array.isArray(msg.tags) ? 
-                    msg.tags.map(tag => `<span class="tag">${tag}</span>`).join('') : '';
+                    msg.tags.map(tag => `<span class="tag">${applyWordColors(tag)}</span>`).join('') : '';
 
                 return `
                     <div class="message-card" data-message-id="${msg.id}">
                         <div class="card-header">
                             <div class="card-content">
-                                <h3 class="card-title">${msg.name}</h3>
-                                <p class="card-summary">${msg.summary}</p>
+                                <h3 class="card-title">${applyWordColors(msg.name)}</h3>
+                                <p class="card-summary">${applyWordColors(msg.summary)}</p>
                             </div>
                             <button class="copy-btn" onclick="copyMessage(${msg.id}, event)">Copy</button>
                         </div>
