@@ -108,6 +108,12 @@
     "copyable-message": "Tenant called us to say he wants to receive his certificate, so I've checked the Certificates box so he can receive them. (KH)"
   },
   {
+    "name": "Certify - Inbound Tenant Call - Will send ASAP",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Call", "Will Send Kit"],
+    "copyable-message": "Tenant called us and said they'd sent the samples back to us ASAP. (KH)"
+  },
+  {
     "name": "Certify - Inbound Tenant Call - No Knowledge of Delivery - Will Email Pic of Delivery",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Call", "Email Required", "To Send Evidence"],
