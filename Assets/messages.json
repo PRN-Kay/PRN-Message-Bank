@@ -15,7 +15,7 @@
     "name": "Email Tenant - Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
     "summary": "Send this email to tenants who need a new sampling kit.",
     "tags": ["Outbound Email", "Tenants", "Lead", "Reply"],
-    "copyable-message": "Hi V_1,\n\nSorry to hear that! The kit we sent must have went missing in the post.\n\nWe'll send out a replacement kit as soon as we can; it should be with you soon.\n\nJust fill the empty bottles with water, pop them back in the box, and send the kit back to us using the included pre-paid returns label.\n\nThanks for getting back to us!\n\nAll the best,\n"
+    "copyable-message": "Hi V_1,\n\nSorry to hear that! The kit we sent must have went missing in the post.\n\nWe’ll arrange to send a replacement sampling kit to your address shortly so we can proceed with testing your water system for lead. Once it’s dispatched, you should receive a confirmation email from Royal Mail.\n\nPlease keep an eye out for a small blue rectangular cardboard box—it should arrive within a week.\n\n Once it arrives, just fill the empty bottles with water from the relevant taps in your property, pop them back in the box, and send the kit back to us using the included pre-paid returns label (stick the returns label over the label on top of the box).\n\nBest regards,\n\n"
   },
   {
     "name": "Email Tenant - Sent Kit But We Didn't Receive",
