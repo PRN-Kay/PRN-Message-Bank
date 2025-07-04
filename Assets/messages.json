@@ -75,6 +75,10 @@
     "tags": ["Certify", "Tenants", "Outbound Call", "Sapling Kit Incoming"],
     "copyable-message": "Phoned to chase about sampling kit, and they said they hadn't done it yet. Will send us the samples ASAP. (KH)"
 },
+
+
+
+    
 {
     "name": "Certify - Phoned Tenant - Dial Tone. Sent Eamil.",
     "summary": "Add this comment to certify if the phone went to a dial tone.",
@@ -82,11 +86,21 @@
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Number Not In Service - Emailed Tenant.",
+    "name": "Certify - Phoned Tenant - Number Not In Service - Sent Eamil.",
     "summary": "Add this comment to certify if the phone number is noot is not in service.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Outbound Email", "Call Failure"],
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
+{
+    "name": "Certify - Phoned Tenant - Number Currently Unavailable - Sent Eamil.",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email"],
+    "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and the automated voice told me 'The number you've dialed is currently unavailable. Please try again later' Due to uncertainty about the phone number, I sent an email. (KH)"
+},
+
+
+
+    
 {
     "name": "Certify - Phoned Tenant - Kit Uncollected",
     "summary": "-",
