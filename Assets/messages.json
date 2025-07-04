@@ -51,7 +51,13 @@
     "name": "Certify - Email Received - Sampling Kit Not Received, To Resend",
     "summary": "Add this comment to certify if the tenant replies saying they didn't receive a sampling kit.",
     "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
+    "copyable-message": "The tenant replied to my email to say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
+  },
+  {
+    "name": "Certify - Email Received - Will Send ASAP",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Email"],
+    "copyable-message": "The tenant replied to my email saying she hasn't sent us the samples yet, but that she'll do it ASAP. (KH)"
   },
   {
     "name": "Certify - No Phone - Email Sent Chasing Sampling Kits",
