@@ -78,6 +78,12 @@
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
   },
   {
+    "name": "Certify - Phoned Tenant - Declined Call - Sent Text",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text"],
+    "copyable-message": "Phoned the tenant to chase them up about the sampling kit but they declined the call, so I sent them a text. (KH)."
+  },
+  {
     "name": "Certify - Phoned Tenant - Tenant Didn't Receive Kit",
     "summary": "Add this comment to certify if the tenant didn't receive the kit.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Replacement Kit Needed"],
