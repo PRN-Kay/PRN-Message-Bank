@@ -1,5 +1,4 @@
 [
-// Outbound Email Messages to Tenants
 {
     "name": "Email Tenant - Lead Test Requirement",
     "summary": "Send this email to tenants to inform them of the incoming water sampling kit.",
@@ -31,7 +30,9 @@
     "copyable-message": "Hi,\n\nKay from PRN Water Services here.\n\nI'm emailing you about the water sampling kit we sent you just over a month ago.\n\nAfter digging deeper into our Royal Mail deliveries, I've located our delivery to your address, and I've discovered that delivery was attempted on [Delivery Attempt Date] and failed because 'there didn't seem to be anyone in'.\n\nSince testing your water system for lead is a legal requirement, we'll need to send out a replacement water sampling kit.\n\nBefore we do, to avoid having the same problem, I wonder if you could either\n(a) confirm a timeframe that you're likely to be at home to accept the delivery, or\n(b) provide us with an alternative delivery address (eg: your workplace, a friends' address, a neighbours' address, a family members address, etc)?"
 },
 
-// Certification Messages - Outbound Calls
+
+
+    
 {
     "name": "Certify - Phoned Tenant - Sent Kit Recently - Awaiting Receipt",
     "summary": "-",
@@ -87,7 +88,9 @@
     "copyable-message": "Phoned the tenant to ask about the sampling kit, and learned that they didn't collect it from the Delivery Office on time, so I told them we'll send a replacement kit, and that this time, if delivery fails, they should collect the kit from the designated collection office (KH)"
 },
 
-// Certification Messages - Inbound Calls
+
+    
+    
 {
     "name": "Certify - Inbound Tenant Call - Tenant Called Wanting Certificate.",
     "summary": "-",
@@ -113,7 +116,9 @@
     "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
 },
 
-// Certification Messages - Text Messages
+    
+    
+    
 {
     "name": "Certify - Text Tenant Asking for Sample Kit Update",
     "summary": "Add this comment to certify when you text the tenant for an update regarding their sampling kit.",
@@ -139,7 +144,9 @@
     "copyable-message": "Tried phoning the tenent but the automated voice told me 'this person's phone is switched off, please send a text'. Sent a text to inform them of the failed delivery, and that they should ensure they can receive the delivery. (KH)"
 },
 
-// Certification Messages - Email Related
+    
+        
+    
 {
     "name": "Certify - Email Received - Sampling Kit Not Received, To Resend",
     "summary": "Add this comment to certify if the tenant replies saying they didn't receive a sampling kit.",
@@ -165,7 +172,9 @@
     "copyable-message": "Phoned tenant to chase about sampling kit and they didn't receive it due to failed delivery because the tenant wasn't home. Sent an email asking for a suitable delivery timeframe, or an alternative delivery address. (KH)"
 },
 
-// Certification Messages - General
+    
+
+    
 {
     "name": "Certify - Replacement Kit Despatched",
     "summary": "Add this comment to certify when despatching a replacement sampling kit.",
