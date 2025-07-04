@@ -111,7 +111,7 @@
     "name": "Certify - Inbound Tenant Call - Will send ASAP",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Call", "Will Send Kit"],
-    "copyable-message": "Tenant called us and said they'd sent the samples back to us ASAP. (KH)"
+    "copyable-message": "Tenant called us and said they'd send the samples back to us ASAP. (KH)"
   },
   {
     "name": "Certify - Inbound Tenant Call - No Knowledge of Delivery - Will Email Pic of Delivery",
