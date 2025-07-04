@@ -701,277 +701,281 @@
     </div>
 
     <script>
-        let messages = [];
-        let filteredMessages = [];
-        let expandedCard = null;
-        // Word coloring configuration
-        const coloredWordsConfig = {
-            "Phoned": "cyan",
-            "Email": "orange",
-            "Certify": "yellow",
-            // Add more word-color mappings as needed
-        };
+    let messages = [];
+    let filteredMessages = [];
+    let expandedCard = null;
+    // Word coloring configuration
+    const coloredWordsConfig = {
+        "Phoned": "cyan",
+        "Email": "orange",
+        "Certify": "yellow",
+        // Add more word-color mappings as needed
+    };
 
-        // Initialize the app
-        async function init() {
-            try {
-                // Try to load from Assets/messages.json
-                const response = await fetch('Assets/messages.json');
-                if (response.ok) {
-                    messages = await response.json();
-                } else {
-                    throw new Error('Could not load messages.json');
-                }
-            } catch (error) {
-                console.log('Using sample data as messages.json is not available');
-                messages = sampleMessages;
+    // Initialize the app
+    async function init() {
+        try {
+            // Try to load from Assets/messages.json
+            const response = await fetch('Assets/messages.json');
+            if (response.ok) {
+                messages = await response.json();
+            } else {
+                throw new Error('Could not load messages.json');
             }
-
-            // Add unique IDs to messages
-            messages = messages.map((msg, index) => ({ ...msg, id: index }));
-            filteredMessages = [...messages];
-            populateTagFilter();
-            renderMessages();
-            setupEventListeners();
+        } catch (error) {
+            console.log('Using sample data as messages.json is not available');
+            messages = sampleMessages;
         }
 
-        // Get current time in HH:MM format
-        function getCurrentTime() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            return `${hours}:${minutes}`;
-        }
+        // Add unique IDs to messages
+        messages = messages.map((msg, index) => ({ ...msg, id: index }));
+        filteredMessages = [...messages];
+        populateTagFilter();
+        renderMessages();
+        setupEventListeners();
+    }
 
-        // Extract variables from message text
-        function extractVariables(text) {
-            const matches = text.match(/V_\d+/g);
-            return matches ? [...new Set(matches)].sort() : [];
-        }
+    // Get current time in HH:MM format
+    function getCurrentTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        return `${hours}:${minutes}`;
+    }
 
-        // Apply color to specific words in any text
-        function applyWordColors(text) {
-            if (!text) return text;
-            let result = text.toString();
-            for (const [word, color] of Object.entries(coloredWordsConfig)) {
-                const regex = new RegExp(`(^|\\s)(${word})(?=\\s|$|[.,!?])`, 'gi');
-                result = result.replace(regex, `$1<span style="color: ${color}; font-weight: bold;">$2</span>`);
+    // Extract variables from message text
+    function extractVariables(text) {
+        const matches = text.match(/V_\d+/g);
+        return matches ? [...new Set(matches)].sort() : [];
+    }
+
+    // Apply color to specific words in any text
+    function applyWordColors(text) {
+        if (!text) return text;
+        let result = text.toString();
+        for (const [word, color] of Object.entries(coloredWordsConfig)) {
+            const regex = new RegExp(`(^|\\s)(${word})(?=\\s|$|[.,!?])`, 'gi');
+            result = result.replace(regex, `$1<span style="color: ${color}; font-weight: bold;">$2</span>`);
+        }
+        return result;
+    }
+
+    // Replace variables in text with user input and optionally add time
+    function replaceVariables(text, messageId, forDisplay = false) {
+        const variables = extractVariables(text);
+        let result = text;
+        
+        variables.forEach(variable => {
+            const input = document.getElementById(`var-${messageId}-${variable}`);
+            if (input && input.value.trim()) {
+                result = result.replace(new RegExp(variable, 'g'), input.value.trim());
             }
-            return result;
+        });
+
+        // Add time if checkbox is checked
+        const addTimeCheckbox = document.getElementById('addTimeCheckbox');
+        if (addTimeCheckbox && addTimeCheckbox.checked) {
+            result += ` - ${getCurrentTime()}`;
         }
 
-        // Replace variables in text with user input and optionally add time
-        function replaceVariables(text, messageId, forDisplay = false) {
-            const variables = extractVariables(text);
-            let result = text;
-            
-            variables.forEach(variable => {
-                const input = document.getElementById(`var-${messageId}-${variable}`);
-                if (input && input.value.trim()) {
-                    result = result.replace(new RegExp(variable, 'g'), input.value.trim());
-                }
-            });
+        // Apply word colors if this is for display
+        if (forDisplay) {
+            result = applyWordColors(result);
+        }
 
-            // Add time if checkbox is checked
-            const addTimeCheckbox = document.getElementById('addTimeCheckbox');
-            if (addTimeCheckbox && addTimeCheckbox.checked) {
-                result += ` - ${getCurrentTime()}`;
+        return result;
+    }
+
+    // Populate tag filter dropdown
+    function populateTagFilter() {
+        const allTags = new Set();
+        messages.forEach(msg => {
+            if (Array.isArray(msg.tags)) {
+                msg.tags.forEach(tag => allTags.add(tag));
             }
+        });
 
-            // Apply word colors if this is for display
-            if (forDisplay) {
-                result = applyWordColors(result);
-            }
+        const filterSelect = document.getElementById('filterSelect');
+        filterSelect.innerHTML = '<option value="">All Tags</option>';
+        
+        [...allTags].sort().forEach(tag => {
+            const option = document.createElement('option');
+            option.value = tag;
+            option.textContent = tag;
+            filterSelect.appendChild(option);
+        });
+    }
 
-            return result;
+    // Filter messages based on search and tag
+    function filterMessages() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        const selectedTag = document.getElementById('filterSelect').value;
+
+        filteredMessages = messages.filter(msg => {
+            // Check all fields for search term
+            const matchesSearch = !searchTerm || 
+                Object.values(msg).some(value => {
+                    if (typeof value === 'string') {
+                        return value.toLowerCase().includes(searchTerm);
+                    } else if (Array.isArray(value)) {
+                        return value.some(item => 
+                            item.toLowerCase().includes(searchTerm)
+                        );
+                    }
+                    return false;
+                });
+
+            const matchesTag = !selectedTag || 
+                (Array.isArray(msg.tags) && msg.tags.includes(selectedTag));
+
+            return matchesSearch && matchesTag;
+        });
+
+        renderMessages();
+    }
+
+    // Render message cards with colored words in all text elements
+    function renderMessages() {
+        const grid = document.getElementById('messagesGrid');
+        const noResults = document.getElementById('noResults');
+
+        if (filteredMessages.length === 0) {
+            grid.innerHTML = '';
+            noResults.style.display = 'block';
+            return;
         }
 
-        // Populate tag filter dropdown
-        function populateTagFilter() {
-            const allTags = new Set();
-            messages.forEach(msg => {
-                if (Array.isArray(msg.tags)) {
-                    msg.tags.forEach(tag => allTags.add(tag));
-                }
-            });
+        noResults.style.display = 'none';
+        
+        grid.innerHTML = filteredMessages.map(msg => {
+            const variables = extractVariables(msg['copyable-message']);
+            const tagsHtml = Array.isArray(msg.tags) ? 
+                msg.tags.map(tag => `<span class="tag">${applyWordColors(tag)}</span>`).join('') : '';
 
-            const filterSelect = document.getElementById('filterSelect');
-            filterSelect.innerHTML = '<option value="">All Tags</option>';
-            
-            [...allTags].sort().forEach(tag => {
-                const option = document.createElement('option');
-                option.value = tag;
-                option.textContent = tag;
-                filterSelect.appendChild(option);
-            });
-        }
-
-        // Filter messages based on search and tag
-        function filterMessages() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const selectedTag = document.getElementById('filterSelect').value;
-
-            filteredMessages = messages.filter(msg => {
-                const matchesSearch = !searchTerm || 
-                    msg.name.toLowerCase().includes(searchTerm) ||
-                    msg.summary.toLowerCase().includes(searchTerm) ||
-                    (Array.isArray(msg.tags) && msg.tags.some(tag => 
-                        tag.toLowerCase().includes(searchTerm)
-                    ));
-
-                const matchesTag = !selectedTag || 
-                    (Array.isArray(msg.tags) && msg.tags.includes(selectedTag));
-
-                return matchesSearch && matchesTag;
-            });
-
-            renderMessages();
-        }
-
-        // Render message cards with colored words in all text elements
-        function renderMessages() {
-            const grid = document.getElementById('messagesGrid');
-            const noResults = document.getElementById('noResults');
-
-            if (filteredMessages.length === 0) {
-                grid.innerHTML = '';
-                noResults.style.display = 'block';
-                return;
-            }
-
-            noResults.style.display = 'none';
-            
-            grid.innerHTML = filteredMessages.map(msg => {
-                const variables = extractVariables(msg['copyable-message']);
-                const tagsHtml = Array.isArray(msg.tags) ? 
-                    msg.tags.map(tag => `<span class="tag">${applyWordColors(tag)}</span>`).join('') : '';
-
-                return `
-                    <div class="message-card" data-message-id="${msg.id}">
-                        <div class="card-header">
-                            <div class="card-content">
-                                <h3 class="card-title">${applyWordColors(msg.name)}</h3>
-                                <p class="card-summary">${applyWordColors(msg.summary)}</p>
-                            </div>
-                            <button class="copy-btn" onclick="copyMessage(${msg.id}, event)">Copy</button>
+            return `
+                <div class="message-card" data-message-id="${msg.id}">
+                    <div class="card-header">
+                        <div class="card-content">
+                            <h3 class="card-title">${applyWordColors(msg.name)}</h3>
+                            <p class="card-summary">${applyWordColors(msg.summary)}</p>
                         </div>
-                        <div class="expanded-content">
-                            <div class="message-text" id="message-preview-${msg.id}">${applyWordColors(msg['copyable-message'])}</div>
-                            ${variables.length > 0 ? `
-                                <div class="variables-section">
-                                    <h4 class="variables-title">Variables</h4>
-                                    ${variables.map(variable => `
-                                        <input type="text" 
-                                               class="variable-input" 
-                                               id="var-${msg.id}-${variable}" 
-                                               placeholder="Enter value for ${variable}"
-                                               oninput="updateMessagePreview(${msg.id})">
-                                    `).join('')}
-                                </div>
-                            ` : ''}
-                            <div class="tags-container">${tagsHtml}</div>
-                            <div class="expanded-footer">
-                                <button class="copy-btn" onclick="copyMessage(${msg.id}, event)">Copy Message</button>
+                        <button class="copy-btn" onclick="copyMessage(${msg.id}, event)">Copy</button>
+                    </div>
+                    <div class="expanded-content">
+                        <div class="message-text" id="message-preview-${msg.id}">${applyWordColors(msg['copyable-message'])}</div>
+                        ${variables.length > 0 ? `
+                            <div class="variables-section">
+                                <h4 class="variables-title">Variables</h4>
+                                ${variables.map(variable => `
+                                    <input type="text" 
+                                           class="variable-input" 
+                                           id="var-${msg.id}-${variable}" 
+                                           placeholder="Enter value for ${variable}"
+                                           oninput="updateMessagePreview(${msg.id})">
+                                `).join('')}
                             </div>
+                        ` : ''}
+                        <div class="tags-container">${tagsHtml}</div>
+                        <div class="expanded-footer">
+                            <button class="copy-btn" onclick="copyMessage(${msg.id}, event)">Copy Message</button>
                         </div>
                     </div>
-                `;
-            }).join('');
-        }
+                </div>
+            `;
+        }).join('');
+    }
 
-        // Update message preview with variable substitution and time
-        function updateMessagePreview(messageId) {
-            const msg = messages.find(m => m.id === messageId);
-            if (!msg) return;
-            
-            const previewElement = document.getElementById(`message-preview-${messageId}`);
-            if (previewElement) {
-                previewElement.innerHTML = replaceVariables(msg['copyable-message'], messageId, true);
-            }
+    // Update message preview with variable substitution and time
+    function updateMessagePreview(messageId) {
+        const msg = messages.find(m => m.id === messageId);
+        if (!msg) return;
+        
+        const previewElement = document.getElementById(`message-preview-${messageId}`);
+        if (previewElement) {
+            previewElement.innerHTML = replaceVariables(msg['copyable-message'], messageId, true);
         }
+    }
 
-        // Copy message to clipboard
-        async function copyMessage(messageId, event) {
-            event.stopPropagation();
+    // Copy message to clipboard
+    async function copyMessage(messageId, event) {
+        event.stopPropagation();
+        
+        const msg = messages.find(m => m.id === messageId);
+        if (!msg) return;
+        
+        const finalMessage = replaceVariables(msg['copyable-message'], messageId);
+        
+        try {
+            await navigator.clipboard.writeText(finalMessage);
             
-            const msg = messages.find(m => m.id === messageId);
-            if (!msg) return;
+            // Visual feedback
+            const btn = event.target;
+            const originalText = btn.textContent;
+            btn.textContent = 'Copied!';
+            btn.style.backgroundColor = '#60bc1b';
             
-            const finalMessage = replaceVariables(msg['copyable-message'], messageId);
-            
-            try {
-                await navigator.clipboard.writeText(finalMessage);
-                
-                // Visual feedback
-                const btn = event.target;
-                const originalText = btn.textContent;
-                btn.textContent = 'Copied!';
-                btn.style.backgroundColor = '#60bc1b';
-                
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.style.backgroundColor = '';
-                }, 1500);
-            } catch (error) {
-                console.error('Failed to copy:', error);
-                // Fallback for older browsers
-                const textArea = document.createElement('textarea');
-                textArea.value = finalMessage;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textArea);
-            }
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.backgroundColor = '';
+            }, 1500);
+        } catch (error) {
+            console.error('Failed to copy:', error);
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = finalMessage;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
         }
+    }
 
-        // Toggle card expansion
-        function toggleCard(messageId) {
-            const cards = document.querySelectorAll('.message-card');
-            const clickedCard = document.querySelector(`[data-message-id="${messageId}"]`);
-            
-            if (expandedCard && expandedCard !== clickedCard) {
-                expandedCard.classList.remove('expanded');
-            }
-            
-            if (clickedCard.classList.contains('expanded')) {
-                clickedCard.classList.remove('expanded');
-                expandedCard = null;
-            } else {
-                clickedCard.classList.add('expanded');
-                expandedCard = clickedCard;
+    // Toggle card expansion
+    function toggleCard(messageId) {
+        const cards = document.querySelectorAll('.message-card');
+        const clickedCard = document.querySelector(`[data-message-id="${messageId}"]`);
+        
+        if (expandedCard && expandedCard !== clickedCard) {
+            expandedCard.classList.remove('expanded');
+        }
+        
+        if (clickedCard.classList.contains('expanded')) {
+            clickedCard.classList.remove('expanded');
+            expandedCard = null;
+        } else {
+            clickedCard.classList.add('expanded');
+            expandedCard = clickedCard;
+            updateMessagePreview(messageId);
+        }
+    }
+
+    // Setup event listeners
+    function setupEventListeners() {
+        const searchInput = document.getElementById('searchInput');
+        const filterSelect = document.getElementById('filterSelect');
+        const addTimeCheckbox = document.getElementById('addTimeCheckbox');
+        
+        searchInput.addEventListener('input', filterMessages);
+        filterSelect.addEventListener('change', filterMessages);
+        
+        // Update previews when time checkbox is toggled
+        addTimeCheckbox.addEventListener('change', () => {
+            if (expandedCard) {
+                const messageId = parseInt(expandedCard.dataset.messageId);
                 updateMessagePreview(messageId);
             }
-        }
+        });
+        
+        // Add click handlers to message cards
+        document.addEventListener('click', (e) => {
+            const card = e.target.closest('.message-card');
+            if (card && !e.target.classList.contains('copy-btn') && !e.target.classList.contains('variable-input')) {
+                const messageId = parseInt(card.dataset.messageId);
+                toggleCard(messageId);
+            }
+        });
+    }
 
-        // Setup event listeners
-        function setupEventListeners() {
-            const searchInput = document.getElementById('searchInput');
-            const filterSelect = document.getElementById('filterSelect');
-            const addTimeCheckbox = document.getElementById('addTimeCheckbox');
-            
-            searchInput.addEventListener('input', filterMessages);
-            filterSelect.addEventListener('change', filterMessages);
-            
-            // Update previews when time checkbox is toggled
-            addTimeCheckbox.addEventListener('change', () => {
-                if (expandedCard) {
-                    const messageId = parseInt(expandedCard.dataset.messageId);
-                    updateMessagePreview(messageId);
-                }
-            });
-            
-            // Add click handlers to message cards
-            document.addEventListener('click', (e) => {
-                const card = e.target.closest('.message-card');
-                if (card && !e.target.classList.contains('copy-btn') && !e.target.classList.contains('variable-input')) {
-                    const messageId = parseInt(card.dataset.messageId);
-                    toggleCard(messageId);
-                }
-            });
-        }
-
-        // Initialize app when DOM is loaded
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
-</body>
-</html>
+    // Initialize app when DOM is loaded
+    document.addEventListener('DOMContentLoaded', init);
+</script>
