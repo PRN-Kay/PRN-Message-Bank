@@ -46,10 +46,16 @@
     "copyable-message": "Phoned the tenant to chase about water sampling kit, and they weren't sure what happened to it, and they said they'd ask their flatmates. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Left a voicemail",
-    "summary": "Add this comment to certify if you left the tenant a voicemail.",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure"],
+    "name": "Certify - Phoned Tenant - Left a Voicemail - Text Later Today",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
+},
+{
+    "name": "Certify - Phoned Tenant - Left a Voicemail - Text Next Working Day",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text"],
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day."
 },
 {
     "name": "Certify - Phoned Tenant - Declined Call - Sent Text",
