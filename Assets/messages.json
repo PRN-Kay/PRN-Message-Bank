@@ -96,9 +96,9 @@
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
   },
   {
-    "name": "Certify - Phoned Tenant - Number Not In Service.",
+    "name": "Certify - Phoned Tenant - Number Not In Service - Emailed Tenant.",
     "summary": "Add this comment to certify if the phone number is noot is not in service.",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure"],
+    "tags": ["Certify", "Tenants", "Outbound Call", "Outbound Email", "Call Failure"],
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
   },
   {
