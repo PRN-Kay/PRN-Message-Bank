@@ -58,6 +58,12 @@
     "copyable-message": "Phoned the tenant to chase them up about the sampling kit but they declined the call, so I sent them a text. (KH)."
 },
 {
+    "name": "Certify - Phoned Tenant - Sent Us Kit A While Ago - No RM Tracking - Lost in Post - Sent Text",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Replacement Kit Needed", "Outbound Text"],
+    "copyable-message": "Phoned the tenant to chase them up for the water sampling kit, and they said they sent it back to us a while ago. I tried checking the status of their delivery via Royal Mail, but there was no tracking information available, likely because the tenant didn't download the royal mail app to scan the barcode. I've sent them a text to inform them, and told them we'd send out a replacement water sampling kit. (KH)."
+},
+{
     "name": "Certify - Phoned Tenant - Tenant Didn't Receive Kit",
     "summary": "Add this comment to certify if the tenant didn't receive the kit.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Replacement Kit Needed"],
