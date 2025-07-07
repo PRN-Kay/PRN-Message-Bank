@@ -169,6 +169,12 @@
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "Tried phoning the tenent but the automated voice told me 'this person's phone is switched off, please send a text'. Sent a text to inform them of the failed delivery, and that they should ensure they can receive the delivery. (KH)"
 },
+{
+    "name": "Certify - Sent Text Asking for Delivery Timeframe or Alternative Delivery Address",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Text", "Further Correspondence Required"],
+    "copyable-message": "Sent a text asking for a suitable delivery timeframe, or an alternative delivery address. (KH)"
+},
 
     
         
@@ -185,6 +191,11 @@
     "tags": ["Certify", "Tenants", "Inbound Email"],
     "copyable-message": "The tenant replied to my email saying she hasn't sent us the samples yet, but that she'll do it ASAP. (KH)"
 },
+
+
+
+
+
 {
     "name": "Certify - No Phone - Email Sent Chasing Sampling Kits",
     "summary": "-",
