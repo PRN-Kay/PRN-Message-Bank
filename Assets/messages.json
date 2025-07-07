@@ -46,13 +46,19 @@
     "copyable-message": "Phoned the tenant to chase about water sampling kit, and they weren't sure what happened to it, and they said they'd ask their flatmates. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Left a Voicemail - Text Later Today",
+    "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Later Today",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
 },
 {
-    "name": "Certify - Phoned Tenant - Left a Voicemail - Text Next Working Day",
+    "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Next Working Day",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
+},
+{
+    "name": "Certify - RtS - Not Collected - Left a Voicemail - Text Later Today",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
@@ -212,7 +218,7 @@
     "name": "Certify - Voicemail Uncertainty - Email Sent",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Email", "Call Failure", "Further Correspondence Required"],
-    "copyable-message": "Was recording a voiceemail to chase the tenant up about the sampling kit, but the call was disconnected mid-recording. Due to uncertqinty about the status of the voicemail, I sent the tenant an email. (KH)"
+    "copyable-message": "Was recording a voiceemail to chase the tenant up about the sampling kit, but the call seemed to be disconnected mid-recording. Due to uncertainty about the status of the voicemail, I sent the tenant an email. (KH)"
 },
 {
     "name": "Certify - Emailed Tenant for Delivery Timeframe or Alternative Address",
