@@ -79,7 +79,7 @@
     "name": "Certify - Phoned Tenant - Tenant Will Send",
     "summary": "Add this comment to certify if the tenant will send kit.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Sapling Kit Incoming"],
-    "copyable-message": "Phoned to chase about sampling kit, and they said they hadn't done it yet. Will send us the samples ASAP. (KH)"
+    "copyable-message": "Phoned to chase about sampling kit, and they said they hadn't done it yet, but now that they've been prompted via phone call, they'll send us the samples back to us. (KH)"
 },
 
 
@@ -121,7 +121,7 @@
     "name": "Certify - Inbound Tenant Call - Tenant Called Wanting Certificate.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Call", "Tenant Request"],
-    "copyable-message": "Tenant called us to say he wants to receive his certificate, so I've checked the Certificates box so he can receive them. (KH)"
+    "copyable-message": "Tenant called us to say they want to receive his certificate, so I've checked the Certificates box so they can receive them. (KH)"
 },
 {
     "name": "Certify - Inbound Tenant Call - Will send ASAP",
@@ -183,13 +183,13 @@
     "name": "Certify - Email Received - Sampling Kit Not Received, To Resend",
     "summary": "Add this comment to certify if the tenant replies saying they didn't receive a sampling kit.",
     "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email to say she hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
+    "copyable-message": "The tenant replied to my email to say they hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
 },
 {
     "name": "Certify - Email Received - Will Send ASAP",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email saying she hasn't sent us the samples yet, but that she'll do it ASAP. (KH)"
+    "copyable-message": "The tenant replied to my email saying they hasn't sent us the samples yet, but that they'll do it ASAP. (KH)"
 },
 
 
