@@ -98,6 +98,12 @@
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
+    "name": "Certify - Phoned Tenant - Not Possible to Connect Call - Sent Eamil.",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Outbound Email", "Call Failure", "Further Correspondence Required"],
+    "copyable-message": "Phoned to chase about sampling kit, and the automated voice said 'It has not been possible to connect your call. Please try again later'. Due to uncertainty about the phone number, I sent an email. (KH)"
+},
+{
     "name": "Certify - Phoned Tenant - Number Currently Unavailable - Sent Eamil.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
