@@ -203,6 +203,12 @@
     "copyable-message": "There is no phone number available for the tenant, so I've sent an email chasing up the sampling kits. (KH)"
 },
 {
+    "name": "Certify - Voicemail Uncertainty - Email Sent",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Email", "Call Failure", "Further Correspondence Required"],
+    "copyable-message": "Was recording a voiceemail to chase the tenant up about the sampling kit, but the call was disconnected mid-recording. Due to uncertqinty about the status of the voicemail, I sent the tenant an email. (KH)"
+},
+{
     "name": "Certify - Emailed Tenant for Delivery Timeframe or Alternative Address",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Email", "Further Correspondence Required"],
