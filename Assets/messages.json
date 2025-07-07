@@ -153,6 +153,12 @@
     "tags": ["Certify", "Tenants", "Inbound Call", "Will Look for Kit"],
     "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
 },
+{
+    "name": "Certify - Inbound Tenant Call - Missed Delivery Due to Holiday - No Collection Slip - Replacement Needed",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Call", "Failed Delivery", "Replacement Needed"],
+    "copyable-message": "Tenant called us back to say they were on holiday when the samples were delivered, and that they weren't given a collection address slip from Royal Mail, so didn't know where to collect the sampling kit from. Replacement Kit Required. (KH)"
+},
 
     
     
