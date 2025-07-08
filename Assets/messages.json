@@ -94,7 +94,13 @@
 {
     "name": "Certify - Phoned Tenant - Dial Tone. Sent Eamil.",
     "summary": "Add this comment to certify if the phone went to a dial tone.",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Further Correspondence Required"],
+    "tags": ["Certify", "Tenants", "Outbound Call", "Outbound Email", "Call Failure", "Further Correspondence Required"],
+    "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
+},
+{
+    "name": "Certify - Phoned Tenant - Stopped Ringing. Sent Eamil.",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
