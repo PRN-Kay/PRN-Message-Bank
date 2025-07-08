@@ -129,6 +129,12 @@
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
     "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and the automated voice told me 'The number you've dialed is currently unavailable. Please try again later' Due to uncertainty about the phone number, I sent an email. (KH)"
 },
+{
+    "name": "Certify - Phoned Tenant - Voicemail Turned Off - Sent Email",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
+    "copyable-message": "Phoned to chase after sampling kit, and the automated voice informed me that this person's voicemail is turned off, and that I can't leave a message. Email sent (KH)"
+},
 
 
 
@@ -172,6 +178,12 @@
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Call", "Failed Delivery", "Replacement Needed"],
     "copyable-message": "Tenant called us back to say they were on holiday when delivery was attempted, and failed, and that they weren't given a collection address slip from Royal Mail, so didn't know where to collect the sampling kit from. Replacement Kit Required. (KH)"
+},
+{
+    "name": "Certify - Inbound Tenant Call - Box Left Outside by RM, Now Destroyed - Replacement Needed",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Call", "Failed Delivery", "Replacement Needed"],
+    "copyable-message": "Tenant called back and said that the sampling kit was left outside by Royal Mail, and that when the tenant noticed it, it had been destroyed by rain. Replacement sampling kit needed. (KH)"
 },
 
     
