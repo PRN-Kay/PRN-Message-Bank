@@ -135,6 +135,12 @@
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase after sampling kit, and the automated voice informed me that this person's voicemail is turned off, and that I can't leave a message. Email sent (KH)"
 },
+{
+    "name": "Certify - Phoned Tenant - Number Cannot be Completed or Dialed - Sent Email",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
+    "copyable-message": "Phoned to chase about sampling kit, and the American automated voice said 'one number cannot be completed or dialled'. Sent an Email instead. (KH)"
+},
 
 
 
