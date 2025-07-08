@@ -112,19 +112,25 @@
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Number Not In Service - Sent Eamil.",
+    "name": "Certify - Phoned Tenant - Number Not In Service - Sent Email.",
     "summary": "Add this comment to certify if the phone number is noot is not in service.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Outbound Email", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Not Possible to Connect Call - Sent Eamil.",
+    "name": "Certify - Phoned Tenant - Not Possible to Connect Call - Sent Email.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Outbound Email", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice said 'It has not been possible to connect your call. Please try again later'. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Number Currently Unavailable - Sent Eamil.",
+    "name": "Certify - Phoned Tenant - Call Cannot Be Completed - Sent Email.",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
+    "copyable-message": "Phoned to chase after sampling kit, and the automated voice told me 'This call cannot be completed at this time. Please hang up and try again later'. Sent an email instead (KH)   "
+},
+{
+    "name": "Certify - Phoned Tenant - Number Currently Unavailable - Sent Email.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
     "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and the automated voice told me 'The number you've dialed is currently unavailable. Please try again later' Due to uncertainty about the phone number, I sent an email. (KH)"
