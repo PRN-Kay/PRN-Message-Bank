@@ -87,6 +87,14 @@
     "tags": ["Certify", "Tenants", "Outbound Call", "Sapling Kit Incoming"],
     "copyable-message": "Phoned to chase about sampling kit, and they said they hadn't done it yet, but now that they've been prompted via phone call, they'll send us the samples back to us. (KH)"
 },
+{
+    "name": "Certify - Phoned Tenant - Did Scottish Water Test - Will Now Send Samples to Us",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Will Look for Kit"],
+    "copyable-message": "Phoned the tenant to chase after water samples, and they said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
+},
+
+    
 
 
 
