@@ -199,7 +199,7 @@
     "name": "Certify - Text Tenant Asking for Sample Kit Update",
     "summary": "Add this comment to certify when you text the tenant for an update regarding their sampling kit.",
     "tags": ["Outbound Text", "Tenants", "Lead", "Further Correspondence Required"],
-    "copyable-message": "Sent a text to the tenant asking for an update regarding returning their sampling kit asap. (KH)"
+    "copyable-message": "Sent a text to the tenant asking for an update regarding returning their sampling kit. (KH)"
 },
 {
     "name": "Certify - Texted Tenant - Kit Uncollected",
@@ -252,10 +252,10 @@
     "copyable-message": "The tenant replied to my email to say they hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
 },
 {
-    "name": "Certify - Email Received - Will Send ASAP",
+    "name": "Certify - Email Received - Will Return Sampling Kit",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email saying they hasn't sent us the samples yet, but that they'll do it ASAP. (KH)"
+    "copyable-message": "The tenant replied to my email saying they hasn't sent us the samples yet, but that they'll do it now. (KH)"
 },
 
 
