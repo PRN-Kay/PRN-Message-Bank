@@ -202,12 +202,6 @@
     "copyable-message": "Sent a text to the tenant asking for an update regarding returning their sampling kit asap. (KH)"
 },
 {
-    "name": "Certify - Text Received - Sent Kit Back Recently - Awaiting Receipt",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
-    "copyable-message": "The tenant replied to my text saying they posted the kit back to us recently. (KH)"
-},
-{
     "name": "Certify - Texted Tenant - Kit Uncollected",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Text"],
@@ -225,6 +219,28 @@
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Needed", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "Sent a text asking for a suitable delivery timeframe, or an alternative delivery address. (KH)"
 },
+
+
+
+
+
+
+
+{
+    "name": "Certify - Text Received - Sent Kit Back Recently - Awaiting Receipt",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
+    "copyable-message": "The tenant replied to my text saying they posted the kit back to us recently. (KH)"
+},
+{
+    "name": "Certify - Text Received - Will Send Kit",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
+    "copyable-message": "The tenant replied to my text saying they'll return the samples to us soon. (KH)"
+},
+
+
+
 
     
         
