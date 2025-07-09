@@ -124,7 +124,7 @@
 
 
 
-    {
+{
     "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Later Today",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
@@ -141,6 +141,24 @@
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
+},
+
+
+
+
+
+
+{
+    "name": "Certify - 2nd Voicemail AND Text Asking for Sample Return Info",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required", "2nd Attempt"],
+    "copyable-message": "Left another voicemail, and sent another text, asking for an update regarding the water samples they've yet to send us. (KH)"
+},
+{
+    "name": "Certify - 2nd Email Asking for Sample Return Info",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Further Correspondence Required", "2nd Attempt"],
+    "copyable-message": "Hi [Tenant's Forename],\n\nThis is Kaelin from PRN Water Services emailing you for a 2nd time to ask for an update regarding the water sampling kit we sent to you roughly 1 month ago.\n\nLead testing is a legal requirement for your tenancy.\n\nPlease let us know when you expect to return your water samples to us.\n\nThe sooner you send us your water samples, the sooner we can ensure your drinking water is safe from lead toxicity.\n\nBest regards,\n"
 },
 
     
