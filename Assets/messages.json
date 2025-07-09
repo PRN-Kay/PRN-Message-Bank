@@ -66,7 +66,7 @@
 {
     "name": "Certify - Phoned Tenant - Tenant Will Send",
     "summary": "Add this comment to certify if the tenant will send kit.",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Sapling Kit Incoming"],
+    "tags": ["Certify", "Tenants", "Outbound Call", "Sampling Kit Incoming"],
     "copyable-message": "Phoned to chase about sampling kit, and they said they hadn't done it yet, but now that they've been prompted via phone call, they'll send us the samples back to us. (KH)"
 },
 {
@@ -196,6 +196,12 @@
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Call", "Will Look for Kit"],
     "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
+},
+{
+    "name": "Certify - Inbound Tenant Call - Did Scottish Water Test, Will Send Samples to Us.",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Call", "Will Send Kit"],
+    "copyable-message": "The tenant called back after my voicemail and said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
 },
 {
     "name": "Certify - Inbound Tenant Call - Missed Delivery Due to Holiday - No Collection Slip - Replacement Needed",
