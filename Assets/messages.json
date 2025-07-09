@@ -33,6 +33,18 @@
 
 
     
+
+{
+    "name": "Certify - No Tenant Contact Details",
+    "summary": "-",
+    "tags": ["Lead", "Contact Failure", "Tenants", "Correspondence With Letting Agent Required"],
+    "copyable-message": "No contact details to contact the tenant and chase after water samples. Correspondence with letting agent required. (KH)"
+},
+    
+
+
+
+    
 {
     "name": "Certify - Phoned Tenant - Sent Kit Recently - Awaiting Receipt",
     "summary": "-",
