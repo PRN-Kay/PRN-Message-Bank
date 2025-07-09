@@ -743,10 +743,15 @@
         return `${hours}:${minutes}`;
     }
 
-    // Extract variables from message text
+    // Extract variables from message text (now looking for [text] format)
     function extractVariables(text) {
-        const matches = text.match(/V_\d+/g);
+        const matches = text.match(/\[([^\]]+)\]/g);
         return matches ? [...new Set(matches)].sort() : [];
+    }
+
+    // Generate a safe ID for a variable by removing special characters and spaces
+    function generateVariableId(variable) {
+        return variable.replace(/[\[\]]/g, '').replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
     }
 
     // Apply color to specific words in any text
@@ -766,9 +771,11 @@
         let result = text;
         
         variables.forEach(variable => {
-            const input = document.getElementById(`var-${messageId}-${variable}`);
+            const variableId = generateVariableId(variable);
+            const input = document.getElementById(`var-${messageId}-${variableId}`);
             if (input && input.value.trim()) {
-                result = result.replace(new RegExp(variable, 'g'), input.value.trim());
+                // Replace all instances of this variable (including the square brackets)
+                result = result.replace(new RegExp(escapeRegExp(variable), 'g'), input.value.trim());
             }
         });
 
@@ -784,6 +791,11 @@
         }
 
         return result;
+    }
+
+    // Escape special regex characters
+    function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
     // Populate tag filter dropdown
@@ -866,13 +878,17 @@
                         ${variables.length > 0 ? `
                             <div class="variables-section">
                                 <h4 class="variables-title">Variables</h4>
-                                ${variables.map(variable => `
-                                    <input type="text" 
-                                           class="variable-input" 
-                                           id="var-${msg.id}-${variable}" 
-                                           placeholder="Enter value for ${variable}"
-                                           oninput="updateMessagePreview(${msg.id})">
-                                `).join('')}
+                                ${variables.map(variable => {
+                                    const variableId = generateVariableId(variable);
+                                    const displayText = variable.replace(/[\[\]]/g, ''); // Remove brackets for display
+                                    return `
+                                        <input type="text" 
+                                               class="variable-input" 
+                                               id="var-${msg.id}-${variableId}" 
+                                               placeholder="Enter value for: ${displayText}"
+                                               oninput="updateMessagePreview(${msg.id})">
+                                    `;
+                                }).join('')}
                             </div>
                         ` : ''}
                         <div class="tags-container">${tagsHtml}</div>
@@ -979,3 +995,5 @@
     // Initialize app when DOM is loaded
     document.addEventListener('DOMContentLoaded', init);
 </script>
+</body>
+</html>
