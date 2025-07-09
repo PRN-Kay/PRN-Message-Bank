@@ -309,7 +309,7 @@
     "name": "Certify - Email Received - Will Return Sampling Kit",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email saying they hasn't sent us the samples yet, but that they'll do it now. (KH)"
+    "copyable-message": "The tenant replied to my email saying they haven't sent us the samples yet, but that they'll do it now. (KH)"
 },
 
 
