@@ -64,6 +64,12 @@
     "copyable-message": "Phoned the tenant to chase them up about the sampling kit, and they said they didn't receive it. Replacement Needed. (KH)"
 },
 {
+    "name": "Certify - Phoned Tenant - Tenant Doesn't Remember Receiving Kit - Will Look for It and Get Back to Us",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Further Correspondence Required"],
+    "copyable-message": "Phoned the tenant to chase after water samples, and they said they don't remember receiving the sampling kit, but that they'll have a look for it and get back to us. (KH)"
+},
+{
     "name": "Certify - Phoned Tenant - Tenant Will Send",
     "summary": "Add this comment to certify if the tenant will send kit.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Sampling Kit Incoming"],
