@@ -46,24 +46,6 @@
     "copyable-message": "Phoned the tenant to chase about water sampling kit, and they weren't sure what happened to it, and they said they'd ask their flatmates. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Later Today",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
-    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
-},
-{
-    "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Next Working Day",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
-    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
-},
-{
-    "name": "Certify - RtS - Not Collected - Left a Voicemail - Text Later Today",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
-    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
-},
-{
     "name": "Certify - Phoned Tenant - Declined Call - Sent Text",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
@@ -93,6 +75,36 @@
     "tags": ["Certify", "Tenants", "Outbound Call", "Will Look for Kit"],
     "copyable-message": "Phoned the tenant to chase after water samples, and they said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
 },
+{
+    "name": "Certify - Phoned Tenant - Moving Out - Unable to Return Samples",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Tenant Moving Out", "Unable to Return Samples"],
+    "copyable-message": "Phoned the tenant to chase after sampling kit, and they told me that they're moving out today, and won't have time to send the sampling kit to us.  (KH (KH)"
+},
+
+
+
+
+
+
+    {
+    "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Later Today",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
+},
+{
+    "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Next Working Day",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
+},
+{
+    "name": "Certify - RtS - Not Collected - Left a Voicemail - Text Later Today",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
+},
 
     
 
@@ -100,13 +112,13 @@
 
     
 {
-    "name": "Certify - Phoned Tenant - Dial Tone. Sent Eamil.",
+    "name": "Certify - Phoned Tenant - Dial Tone. Sent Email.",
     "summary": "Add this comment to certify if the phone went to a dial tone.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Outbound Email", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Stopped Ringing. Sent Eamil.",
+    "name": "Certify - Phoned Tenant - Stopped Ringing. Sent Email.",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Email", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
