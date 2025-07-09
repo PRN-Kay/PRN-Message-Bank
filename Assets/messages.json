@@ -289,7 +289,7 @@
 {
     "name": "Certify - Voicemail Uncertainty - Email Sent",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Email", "Call Failure", "Further Correspondence Required"],
+    "tags": ["Certify", "Tenants", "Outbound Call", "Voicemail", "Outbound Email", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Was recording a voiceemail to chase the tenant up about the sampling kit, but the call seemed to be disconnected mid-recording. Due to uncertainty about the status of the voicemail, I sent the tenant an email. (KH)"
 },
 {
