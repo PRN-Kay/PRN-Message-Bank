@@ -87,6 +87,12 @@
     "tags": ["Certify", "Tenants", "Outbound Call", "Tenant Moving Out", "Unable to Return Samples"],
     "copyable-message": "Phoned the tenant to chase after sampling kit, and they told me that they're moving out today, and won't have time to send the sampling kit to us.  (KH (KH)"
 },
+{
+    "name": "Certify - Phoned Tenant - Moved Out",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Tenant Moved Out", "Correspondence With Letting Agent Required"],
+    "copyable-message": "Phoned the tenant - [Tenant Name] - who told me that they no longer live in this property. I told them I'd remove their details from our system, which I did. ([PRN Agent Initials])"
+},
 
 
 
