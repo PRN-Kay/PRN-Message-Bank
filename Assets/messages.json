@@ -411,7 +411,7 @@
 
 
 {
-    "name": "Certify - No Phone - Email Sent Chasing Sampling Kits",
+    "name": "Certify - No Tenant Phone Number - Email Sent Chasing Sampling Kits",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Email", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "There is no phone number available for the tenant, so I've sent an email chasing up the sampling kits. (KH)"
