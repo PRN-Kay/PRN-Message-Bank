@@ -29,12 +29,18 @@
     "tags": ["Lead", "Outbound Email", "Tenants", "Followup", "Redelivery"],
     "copyable-message": "Hi,\n\nKaelin from PRN Water Services here.\n\nI'm emailing you about the water sampling kit we sent you just over a month ago.\n\nAfter digging deeper into our Royal Mail deliveries, I've located our delivery to your address, and I've discovered that delivery was attempted on [Delivery Attempt Date] and failed because 'there didn't seem to be anyone in'.\n\nSince testing your water system for lead is a legal requirement, we'll need to send out a replacement water sampling kit.\n\nBefore we do, to avoid having the same problem, I wonder if you could either\n(a) confirm a timeframe that you're likely to be at home to accept the delivery, or\n(b) provide us with an alternative delivery address (eg: your workplace, a friends' address, a neighbours' address, a family members address, etc)?"
 },
+{
+    "name": "Email Tenant - Sent Proof of Delivery - Fingers Crossed",
+    "summary": "-",
+    "tags": ["Lead", "Outbound Email", "Tenants", "Followup", "Proof of Delivery"],
+    "copyable-message": "Hi [Tenant's Forename], as requested, I've attached a PDF Proof-of-Delivery image to this email.\n\nI've got my fingers crossed you can find it 🤞😁\n\nBest Regards,"
+},
+    
+    
+    
 
     
-    
-    
-    
-    
+ 
 {
     "name": "Followup Email to Tenant - Asking Again for Sample Return Status",
     "summary": "-",
