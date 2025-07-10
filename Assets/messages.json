@@ -125,13 +125,13 @@
 
 
 {
-    "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Later Today",
+    "name": "Certify - Left a Voicemail Chasing Samples - Text Later Today",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
 },
 {
-    "name": "Certify - Phoned Tenant - Left a Voicemail Chasing Samples - Text Next Working Day",
+    "name": "Certify - Left a Voicemail Chasing Samples - Text Next Working Day",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
@@ -141,6 +141,12 @@
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
+},
+{
+    "name": "Certify - Left a Followup Voicemail Asking for an Update",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
+    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. (KH)"
 },
 
 
