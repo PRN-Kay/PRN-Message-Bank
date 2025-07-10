@@ -184,8 +184,8 @@
 
 
 
-    {
-    "name": "Certify - Outboind Email - Sent a 2nd Email Asking for Sample Return Info",
+{
+    "name": "Certify - Outbound Email - Sent a 2nd Email Asking for Sample Return Info",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Email", "Further Correspondence Required", "2nd Attempt"],
     "copyable-message": "Sent a second email asking for an update regarding their water samples. (KH)"
