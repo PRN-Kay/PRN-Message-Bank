@@ -33,7 +33,7 @@
     "name": "Email Tenant - Sent Proof of Delivery - Fingers Crossed",
     "summary": "-",
     "tags": ["Lead", "Outbound Email", "Tenants", "Followup", "Proof of Delivery"],
-    "copyable-message": "Hi [Tenant's Forename], as requested, I've attached a PDF Proof-of-Delivery image to this email.\n\nI've got my fingers crossed you can find it 🤞😁\n\nBest Regards,"
+    "copyable-message": "Water Sampling Kit - Proof of Delivery\n\nHi [Tenant's Forename], as requested, I've attached a PDF Proof-of-Delivery image to this email.\n\nI've got my fingers crossed you can find it 🤞😁\n\nBest Regards,"
 },
     
     
