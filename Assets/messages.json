@@ -77,6 +77,12 @@
     "tags": ["Lead", "Contact Failure", "Tenants", "Correspondence With Letting Agent Required"],
     "copyable-message": "No contact details to contact the tenant and chase after water samples. Correspondence with letting agent required. (KH)"
 },
+{
+    "name": "Certify - Email Bounceback - Unable to Contact Tenant",
+    "summary": "-",
+    "tags": ["Lead", "Contact Failure", "Tenants", "Correspondence With Letting Agent Required"],
+    "copyable-message": "My email bounced back because the tenant's email address is invalid. Unable to contact tenant. (KH)"
+},
     
 
 
