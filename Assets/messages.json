@@ -106,6 +106,12 @@
     "tags": ["Certify", "Tenants", "Outbound Call", "Will Look for Kit"],
     "copyable-message": "Phoned the tenant to chase after water samples, and they said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
 },
+
+
+
+
+
+    
 {
     "name": "Certify - Phoned Tenant - Moving Out - Unable to Return Samples",
     "summary": "-",
@@ -117,6 +123,12 @@
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Tenant Moved Out", "Correspondence With Letting Agent Required", "Variables"],
     "copyable-message": "Phoned the tenant - [Full Tenant Name] - who told me that they no longer live in this property. I told them I'd remove their details from our system, which I did. ([PRN Agent Initials])"
+},
+{
+    "name": "Certify - Phoned Tenant - Moved Out - Sampes Given to Agent",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Tenant Moved Out", "Correspondence With Letting Agent Required", "Variables"],
+    "copyable-message": "Phoned the tenant - [Full Tenant Name] - who told me that they no longer live in this property, but that they gave the samples to their letting agent. I told them I'd remove their details from our system, which I did. ([PRN Agent Initials])"
 },
 
 
