@@ -339,16 +339,22 @@
 
 
 {
-    "name": "Certify - Text Received - Sent Kit Back Recently - Awaiting Receipt",
+    "name": "Certify - Text Received - Sent Kit Back to Us Recently - Awaiting Receipt",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
     "copyable-message": "The tenant replied to my text saying they posted the kit back to us recently. (KH)"
 },
 {
-    "name": "Certify - Text Received - Will Send Kit",
+    "name": "Certify - Text Received - Will Return Samples to Us",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
     "copyable-message": "The tenant replied to my text saying they'll return the samples to us soon. (KH)"
+},
+{
+    "name": "Certify - Text Received - Safe Place Specified - To Resend Kit",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Text", "Replacement Required"],
+    "copyable-message": "Tenant replied to my text with a suitable safe place for Royal Mail to deposit the sampling kit. I've told them that they can set this safe place in the email they receive from Royal Mail when the sampling kit is despatched. Will send replacement kit. (KH)"
 },
 
 
