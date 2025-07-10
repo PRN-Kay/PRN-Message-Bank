@@ -392,19 +392,19 @@
 
     
         
-    
 {
-    "name": "Certify - Email Received - Sampling Kit Not Received, To Resend",
-    "summary": "Add this comment to certify if the tenant replies saying they didn't receive a sampling kit.",
-    "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email to say they hadn't received the sampling kit we sent out. Will re-send a replacement sampling kit (KH)"
-},
-{
-    "name": "Certify - Email Received - Will Return Sampling Kit",
+    "name": "Certify - Tenant Reply - Will Return Sampling Kit",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Email"],
-    "copyable-message": "The tenant replied to my email saying they haven't sent us the samples yet, but that they'll do it now. (KH)"
+    "tags": ["Certify", "Tenants", "Tenant Reply"],
+    "copyable-message": "The tenant replied saying they haven't sent us the samples yet, but that they'll do it now. (KH)"
 },
+{
+    "name": "Certify - Tenant Reply - Claim: Sent The Samples Back (Uncertain) - I Said We Haven't Received It",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Further Correspondence Required"],
+    "copyable-message": "Tenant said that they THINK they've sent the sampling kit back to us, but expressed uncertainty, and said they'd try to find it in the house. I replied to confirm that we still haven't received it. (KH)"
+},
+
 
 
 
