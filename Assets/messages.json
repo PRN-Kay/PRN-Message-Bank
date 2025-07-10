@@ -196,6 +196,12 @@
     "tags": ["Certify", "Tenants", "Outbound Email", "Further Correspondence Required", "2nd Attempt"],
     "copyable-message": "Sent a second email asking for an update regarding their water samples. (KH)"
 },
+{
+    "name": "Certify - Outbound Email - Sent Tenant Proof of Delivery",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Email", "Further Correspondence Required", "Proof of Delivery"],
+    "copyable-message": "Sent Royal Mail proof of delivery to the tenant. (KH)"
+},
 
     
 
