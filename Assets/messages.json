@@ -9,7 +9,7 @@
     "name": "Email Tenant - Sample Return Reminder",
     "summary": "Send this email to tenants to remind them to send their water sampling kits back to us.",
     "tags": ["Outbound Email", "Tenants", "Lead", "Further Correspondence Required", "Variables"],
-    "copyable-message": "Hi [Tenant's Foreename],\n \n[PRN Agent Name] from PRN Water Services here. We've been instructed by your letting agents, [Letting Agent Name], to carry out a Lead Water Test at your rental property. A sampling kit was delivered to your address on [Date of Delivery] for this purpose.\n \nWe haven't yet received your water samples at our laboratory yet, and would appreciate an update on when you expect to return them.\n \nIf you require a replacement sampling kit, just let us know and we'll be happy to send one out.\n \nBest regards,\n"
+    "copyable-message": "Hi [Tenant's Foreename],\n \n[PRN Agent Name] from PRN Water Services here. We've been instructed by your letting agents, [Letting Agent Name], to carry out a Lead Water Test at your rental property. A sampling kit was delivered to your address on [Date of Delivery] for this purpose.\n \nWe haven't yet received your water samples at our laboratory yet, and would appreciate an update on when you expect to return them.\n\nBest regards,"
 },
 {
     "name": "Email Tenant - Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
