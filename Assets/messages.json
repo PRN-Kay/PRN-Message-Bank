@@ -47,6 +47,24 @@
     "tags": ["Lead", "Outbound Email", "Tenants", "Followup"],
     "copyable-message": "Dear [Tenant Forename],\n\nI hope you're well. I'm just following up to kindly request an update regarding the return of your water samples.\n\nTesting your water supply for lead is a legal requirement, so we would appreciate receiving your samples as soon as possible to avoid any delays.\n\nThank you for your attention to this matter.\n\nKind regards,\n"
 },
+{
+    "name": "Followup - 2nd Voicemail AND Text Asking for Sample Return Info",
+    "summary": "-",
+    "tags": ["Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required", "2nd Attempt"],
+    "copyable-message": "Left another voicemail, and sent another text, asking for an update regarding the water samples they've yet to send us. (KH)"
+},
+{
+    "name": "Followup - Outbound Email - 2nd Email Asking for Sample Return Info",
+    "summary": "-",
+    "tags": ["Tenants", "Further Correspondence Required", "2nd Attempt"],
+    "copyable-message": "2nd Reminder - Lead Testing Requirement\n\nHi [Tenant's Forename],\n\nThis is Kaelin from PRN Water Services emailing you for a 2nd time to ask for an update regarding the water sampling kit we sent to you roughly 1 month ago.\n\nLead testing is a legal requirement for your tenancy.\n\nPlease let us know when you expect to return your water samples to us.\n\nThe sooner you send us your water samples, the sooner we can ensure your drinking water is safe from lead toxicity.\n\nBest regards,\n"
+},
+{
+    "name": "Followup - Outbound Email - Tenant THINKS They've Sent the Kit, But No Receipt and No Tracking",
+    "summary": "-",
+    "tags": ["Tenants", "Further Correspondence Required", "2nd Attempt"],
+    "copyable-message": "Hi [Tenant's forename],\n\nI hope you're well.\n\nJust to confirm, we’ve not yet received your samples. Delivery typically takes no longer than three working days.\n\nUnfortunately, we don’t have any tracking information for your return. This may be because (a) the barcode wasn’t scanned via the Royal Mail app prior to posting—which is completely understandable—or (b) the kit hasn’t yet been posted back to us.\n\nIf you could kindly check whether the sampling kit is still at your property and let us know either way, it would be much appreciated.\n\nBest regards,\n"
+},
 
 
     
@@ -172,18 +190,7 @@
 
 
 
-{
-    "name": "Followup - 2nd Voicemail AND Text Asking for Sample Return Info",
-    "summary": "-",
-    "tags": ["Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required", "2nd Attempt"],
-    "copyable-message": "Left another voicemail, and sent another text, asking for an update regarding the water samples they've yet to send us. (KH)"
-},
-{
-    "name": "Followup - Outbound Email - 2nd Email Asking for Sample Return Info",
-    "summary": "-",
-    "tags": ["Tenants", "Further Correspondence Required", "2nd Attempt"],
-    "copyable-message": "2nd Reminder - Lead Testing Requirement\n\nHi [Tenant's Forename],\n\nThis is Kaelin from PRN Water Services emailing you for a 2nd time to ask for an update regarding the water sampling kit we sent to you roughly 1 month ago.\n\nLead testing is a legal requirement for your tenancy.\n\nPlease let us know when you expect to return your water samples to us.\n\nThe sooner you send us your water samples, the sooner we can ensure your drinking water is safe from lead toxicity.\n\nBest regards,\n"
-},
+
 
 
 
