@@ -307,7 +307,7 @@
 {
     "name": "Certify - Tenant Reply - Will send ASAP",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Tenant Reply", "Will Send Kit"],
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Awaiting Receipt"],
     "copyable-message": "Tenant replied and said they'd send the samples back to us ASAP. (KH)"
 },
 {
@@ -319,13 +319,13 @@
 {
     "name": "Certify - Tenant Reply - Did Scottish Water Test, Will Look for Our Kit to Send Us.",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Tenant Reply", "Will Look for Kit"],
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Further Correspondence Required"],
     "copyable-message": "Tenant replied to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
 },
 {
     "name": "Certify - Tenant Reply - Did Scottish Water Test, Will Send Samples to Us.",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Tenant Reply", "Will Send Kit"],
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Awaiting Receipt"],
     "copyable-message": "The tenant replied and said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
 },
 {
@@ -355,7 +355,7 @@
 {
     "name": "Certify - Tenant Reply - Will Return Samples to Us",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
+    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Awaiting Receipt"],
     "copyable-message": "The tenant replied saying they'll return the samples to us soon. (KH)"
 },
 {
@@ -367,7 +367,13 @@
 {
     "name": "Certify - Tenant Reply - Will Return Sampling Kit",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Tenant Reply"],
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Awaiting Receipt"],
+    "copyable-message": "The tenant replied saying they haven't sent us the samples yet, but that they'll do it now. (KH)"
+},
+{
+    "name": "Certify - Tenant Reply - Lied About Delivery Date - Will Resend Kit",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Liar", "Awaiting Receipt"],
     "copyable-message": "The tenant replied saying they haven't sent us the samples yet, but that they'll do it now. (KH)"
 },
 {
