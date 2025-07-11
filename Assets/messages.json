@@ -299,55 +299,97 @@
     
     
 {
-    "name": "Certify - Inbound Tenant Call - Tenant Called Wanting Certificate.",
+    "name": "Certify - Tenant Reply - Tenant Called Wanting Certificate.",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Tenant Request"],
-    "copyable-message": "Tenant called us to say they want to receive his certificate, so I've checked the Certificates box so they can receive them. (KH)"
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Tenant Request"],
+    "copyable-message": "Tenant replied to say they want to receive his certificate, so I've checked the Certificates box so they can receive them. (KH)"
 },
 {
-    "name": "Certify - Inbound Tenant Call - Will send ASAP",
+    "name": "Certify - Tenant Reply - Will send ASAP",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Will Send Kit"],
-    "copyable-message": "Tenant called us and said they'd send the samples back to us ASAP. (KH)"
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Will Send Kit"],
+    "copyable-message": "Tenant replied and said they'd send the samples back to us ASAP. (KH)"
 },
 {
-    "name": "Certify - Inbound Tenant Call - No Knowledge of Delivery - Will Email Pic of Delivery",
+    "name": "Certify - Tenant Reply - No Knowledge of Delivery - Will Email Pic of Delivery",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Email Required", "To Send Evidence"],
-    "copyable-message": "Tenant called back to say that they don't think they received the sampling kit. After checking Royal Mail, I confirmed that they did receive the sampling kit, and told them the date it was delivered. After further expressions of cluelessness, I said I'd send an Email with a picture of the sampling kit being delivered to their property in hopes it jogs their memory. (KH)"
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Email Required", "To Send Evidence"],
+    "copyable-message": "Tenant replied to say that they don't think they received the sampling kit. After checking Royal Mail, I confirmed that they did receive the sampling kit, and told them the date it was delivered. After further expressions of cluelessness, I said I'd send an Email with a picture of the sampling kit being delivered to their property in hopes it jogs their memory. (KH)"
 },
 {
-    "name": "Certify - Inbound Tenant Call - Did Scottish Water Test, Will Look for Our Kit to Send Us.",
+    "name": "Certify - Tenant Reply - Did Scottish Water Test, Will Look for Our Kit to Send Us.",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Will Look for Kit"],
-    "copyable-message": "Tenant called back to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Will Look for Kit"],
+    "copyable-message": "Tenant replied to say they already dealt with water sampling, but revealed that it was for Scottish Water. I told her that Scottish Water's testing is insufficient and that they'll need to send samples to us. The said they'd send the kit back to us if they can find it. (KH)"
 },
 {
-    "name": "Certify - Inbound Tenant Call - Did Scottish Water Test, Will Send Samples to Us.",
+    "name": "Certify - Tenant Reply - Did Scottish Water Test, Will Send Samples to Us.",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Will Send Kit"],
-    "copyable-message": "The tenant called back after my voicemail and said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Will Send Kit"],
+    "copyable-message": "The tenant replied and said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
 },
 {
     "name": "Certify - Inbound Tenant Call - Missed Delivery Due to Holiday - No Collection Slip - Replacement Required",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Failed Delivery", "Replacement Required"],
-    "copyable-message": "Tenant called us back to say they were on holiday when delivery was attempted, and failed, and that they weren't given a collection address slip from Royal Mail, so didn't know where to collect the sampling kit from. Replacement Kit Required. (KH)"
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Failed Delivery", "Replacement Required"],
+    "copyable-message": "Tenant replied to say they were on holiday when delivery was attempted, and failed, and that they weren't given a collection address slip from Royal Mail, so didn't know where to collect the sampling kit from. Replacement Kit Required. (KH)"
 },
 {
-    "name": "Certify - Inbound Tenant Call - Box Left Outside by RM, Now Destroyed - Replacement Required",
+    "name": "Certify - Tenant Reply - Box Left Outside by RM, Now Destroyed - Replacement Required",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Failed Delivery", "Replacement Required"],
-    "copyable-message": "Tenant called back and said that the sampling kit was left outside by Royal Mail, and that when the tenant noticed it, it had been destroyed by rain. Replacement sampling kit needed. (KH)"
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Failed Delivery", "Replacement Required"],
+    "copyable-message": "Tenant replied and said that the sampling kit was left outside by Royal Mail, and that when the tenant noticed it, it had been destroyed by rain. Replacement sampling kit needed. (KH)"
 },
 {
-    "name": "Certify - Inbound Tenant Call - Tenant Moved Out",
+    "name": "Certify - Tenant Reply - Tenant Moved Out",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Call", "Tenant Moved Out", "Correspondence With Letting Agent Required", "Variables"],
-    "copyable-message": "The tenant - [Tenant Name] - called back to let us know that they no longer live in this property. I told them I'd remove their details from our syste, which I did. ([PRN Agent Initials])"
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Tenant Moved Out", "Correspondence With Letting Agent Required", "Variables"],
+    "copyable-message": "The tenant - [Tenant Name] - replied to let us know that they no longer live in this property. I told them I'd remove their details from our syste, which I did. ([PRN Agent Initials])"
+},
+{
+    "name": "Certify - Tenant Reply - Sent Kit Back to Us Recently - Awaiting Receipt",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
+    "copyable-message": "The tenant replied saying they posted the kit back to us recently. (KH)"
+},
+{
+    "name": "Certify - Tenant Reply - Will Return Samples to Us",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
+    "copyable-message": "The tenant replied saying they'll return the samples to us soon. (KH)"
+},
+{
+    "name": "Certify - Tenant Reply - Safe Place Specified - To Resend Kit",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Inbound Text", "Replacement Required"],
+    "copyable-message": "Tenant replied with a suitable safe place for Royal Mail to deposit the sampling kit. I've told them that they can set this safe place in the email they receive from Royal Mail when the sampling kit is despatched. Will send replacement kit. (KH)"
+},
+{
+    "name": "Certify - Tenant Reply - Will Return Sampling Kit",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Tenant Reply"],
+    "copyable-message": "The tenant replied saying they haven't sent us the samples yet, but that they'll do it now. (KH)"
+},
+{
+    "name": "Certify - Tenant Reply - Claim: Sent The Samples Back (Uncertain) - I Said We Haven't Received It",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Further Correspondence Required"],
+    "copyable-message": "Tenant said that they THINK they've sent the sampling kit back to us, but expressed uncertainty, and said they'd try to find it in the house. I replied to confirm that we still haven't received it. (KH)"
+},
+{
+    "name": "Certify - Tenant Reply - Threw Kit In Bin - Replacement Required",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Tenant Reply", "Replacement Required"],
+    "copyable-message": "Tenant replied to say they threw the water sampling kit in the bin. I replied to say that lead testing is a legal requirement for their tenancy, and that we'll send them another water sampling kit soon, and that they'll receive a despatch confirmation email from Royal Mail when we do this. Replacement Kit Required. (KH)"
 },
 
+
+
+
+
     
+
+
     
     
 {
@@ -376,47 +418,6 @@
 },
 
 
-
-
-
-
-
-{
-    "name": "Certify - Text Received - Sent Kit Back to Us Recently - Awaiting Receipt",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
-    "copyable-message": "The tenant replied to my text saying they posted the kit back to us recently. (KH)"
-},
-{
-    "name": "Certify - Text Received - Will Return Samples to Us",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
-    "copyable-message": "The tenant replied to my text saying they'll return the samples to us soon. (KH)"
-},
-{
-    "name": "Certify - Text Received - Safe Place Specified - To Resend Kit",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Text", "Replacement Required"],
-    "copyable-message": "Tenant replied to my text with a suitable safe place for Royal Mail to deposit the sampling kit. I've told them that they can set this safe place in the email they receive from Royal Mail when the sampling kit is despatched. Will send replacement kit. (KH)"
-},
-
-
-
-
-    
-        
-{
-    "name": "Certify - Tenant Reply - Will Return Sampling Kit",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Tenant Reply"],
-    "copyable-message": "The tenant replied saying they haven't sent us the samples yet, but that they'll do it now. (KH)"
-},
-{
-    "name": "Certify - Tenant Reply - Claim: Sent The Samples Back (Uncertain) - I Said We Haven't Received It",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Tenant Reply", "Further Correspondence Required"],
-    "copyable-message": "Tenant said that they THINK they've sent the sampling kit back to us, but expressed uncertainty, and said they'd try to find it in the house. I replied to confirm that we still haven't received it. (KH)"
-},
 
 
 
