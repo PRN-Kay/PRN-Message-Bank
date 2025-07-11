@@ -350,7 +350,7 @@
     "name": "Certify - Tenant Reply - Tenant Moved Out",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Tenant Reply", "Tenant Moved Out", "Correspondence With Letting Agent Required", "Variables"],
-    "copyable-message": "The tenant - [Tenant Name] - replied to let us know that they no longer live in this property. I told them I'd remove their details from our syste, which I did. ([PRN Agent Initials])"
+    "copyable-message": "The tenant - [Tenant Name] - replied to let us know that they no longer live in this property. I told them I'd remove their details from our system, which I did. ([PRN Agent Initials])"
 },
 {
     "name": "Certify - Tenant Reply - Sent Kit Back to Us Recently - Awaiting Receipt",
