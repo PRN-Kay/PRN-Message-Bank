@@ -474,6 +474,6 @@
     "name": "Certify - Kit Returned to Sender",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Required"],
-    "copyable-message": "Returned to Sender (KH)"
+    "copyable-message": "Marked as Returned to Sender on [Date Returned to Sender] by Royal Mail. (KH)"
 }
 ]
