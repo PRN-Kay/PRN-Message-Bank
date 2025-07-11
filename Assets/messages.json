@@ -136,6 +136,12 @@
     "tags": ["Certify", "Tenants", "Outbound Call", "Will Look for Kit"],
     "copyable-message": "Phoned the tenant to chase after water samples, and they said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
 },
+{
+    "name": "Certify - Phoned Tenant - Tenant Didn't Have Time to Talk",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Further Correspondence Required"],
+    "copyable-message": "Tenant said he didn't have time to talk at the moment. (KH)"
+},
 
 
 
