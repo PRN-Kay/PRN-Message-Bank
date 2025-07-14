@@ -89,7 +89,12 @@
     "tags": ["Lead", "Contact Failure", "Tenants", "Correspondence With Letting Agent Required"],
     "copyable-message": "My email bounced back because the tenant's email address is invalid. Unable to contact tenant. (KH)"
 },
-    
+{
+    "name": "Certify - Tenant's Phone Number is Invalid - Email Sent",
+    "summary": "-",
+    "tags": ["Lead", "Tenants", "Outbound Email", "Further Correspondence Required"],
+    "copyable-message": "Tenant's phone number is invalid, so I've sent an email chasing after water samples (KH)"
+},
 
 
 
