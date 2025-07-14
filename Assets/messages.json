@@ -227,6 +227,12 @@
     "tags": ["Certify", "Tenants", "Outbound Email", "Further Correspondence Required", "Proof of Delivery"],
     "copyable-message": "Sent Royal Mail proof of delivery to the tenant. (KH)"
 },
+{
+    "name": "Certify - Tenant's Phone Switched Off - Seent an Email",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Email", "Further Correspondence Required"],
+    "copyable-message": "Tried phoning the tenent to chase after samples, but the automated voice told me 'this person's phone is switched off, please try again later'. Sent an email instead. (KH)"
+},
 
     
 
