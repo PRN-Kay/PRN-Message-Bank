@@ -372,19 +372,19 @@
 {
     "name": "Certify - Tenant Reply - Sent Kit Back to Us Recently - Awaiting Receipt",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Kit Sent"],
+    "tags": ["Certify", "Tenants", "Reply", "Awaiting Receipt", "Kit Sent"],
     "copyable-message": "The tenant replied saying they posted the kit back to us recently. (KH)"
 },
 {
     "name": "Certify - Tenant Reply - Will Return Samples to Us",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Text", "Awaiting Receipt", "Awaiting Receipt"],
+    "tags": ["Certify", "Tenants", "Reply", "Awaiting Receipt", "Awaiting Receipt"],
     "copyable-message": "The tenant replied saying they'll return the samples to us soon. (KH)"
 },
 {
     "name": "Certify - Tenant Reply - Safe Place Specified - To Resend Kit",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Text", "Replacement Required"],
+    "tags": ["Certify", "Tenants", "Reply", "Replacement Required"],
     "copyable-message": "Tenant replied with a suitable safe place for Royal Mail to deposit the sampling kit. I've told them that they can set this safe place in the email they receive from Royal Mail when the sampling kit is despatched. Will send replacement kit. (KH)"
 },
 {
@@ -474,7 +474,7 @@
 {
     "name": "Certify - Email Received - Proposed Delivery Tomorrow - Inadequate for RM",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Inbound Email", "Further Correspondence Required"],
+    "tags": ["Certify", "Tenants", "Reply", "Further Correspondence Required"],
     "copyable-message": "The tenant Emailed back to say he'll be home tomorrow and that it would be a suitable date for delivery. However, this isn't adequate notice for Royal Mail, so I replied explaining that they require 2–3 days' notice to allow for delivery. Awaiting response. (KH)"
 },
 
