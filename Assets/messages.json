@@ -69,7 +69,7 @@
     "name": "Reply to Tenant - Tenant Will Send Kit - Thanks",
     "summary": "-",
     "tags": ["Lead", "Outbound Email", "Tenants", "Reply"],
-    "copyable-message": "Fantastic, we should receive your samples soon then.\n\nThanks for the update Isla, it's much appreciated 🙂\n\nBest regards,"
+    "copyable-message": "Fantastic, we should receive your samples soon then.\n\nThanks for the update [Tenant's Forename], it's much appreciated 🙂\n\nBest regards,"
 },
 
 
