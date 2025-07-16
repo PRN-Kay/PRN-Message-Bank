@@ -48,18 +48,6 @@
     "copyable-message": "Dear [Tenant Forename],\n\nI hope you're well. I'm just following up to kindly request an update regarding the return of your water samples.\n\nTesting your water supply for lead is a legal requirement, so we would appreciate receiving your samples as soon as possible to avoid any delays.\n\nThank you for your attention to this matter.\n\nKind regards,\n"
 },
 {
-    "name": "Followup - 2nd Text Instructing Tenant to Return Samples",
-    "summary": "-",
-    "tags": ["Tenants", "Outbound Text", "Followup", "Further Correspondence Required", "2nd Attempt"],
-    "copyable-message": "Sent a 2nd text to the tenant instructing them to return the water samples to us as soon as possible (KH)"
-},
-{
-    "name": "Followup - 2nd Voicemail AND Text Asking for Sample Return Info",
-    "summary": "-",
-    "tags": ["Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required", "2nd Attempt"],
-    "copyable-message": "Left another voicemail, and sent another text, asking for an update regarding the water samples they've yet to send us. (KH)"
-},
-{
     "name": "Followup Email to Tenant - 2nd Email Asking for Sample Return Info",
     "summary": "-",
     "tags": ["Tenants", "Outbound Email", "Further Correspondence Required", "2nd Attempt"],
@@ -186,6 +174,24 @@
     "summary": "-",
     "tags": ["Certify", "Tenants", "Followup", "Awaiting Samples"],
     "copyable-message": "Tenant apologises and says they'll send it to us soon (KH)"
+},
+{
+    "name": "Certify - Followup - 2nd Text Instructing Tenant to Return Samples",
+    "summary": "-",
+    "tags": ["Tenants", "Outbound Text", "Followup", "Further Correspondence Required", "2nd Attempt"],
+    "copyable-message": "Sent a 2nd text to the tenant instructing them to return the water samples to us as soon as possible (KH)"
+},
+{
+    "name": "Certify - Followup - 2nd Voicemail AND Text Asking for Sample Return Info",
+    "summary": "-",
+    "tags": ["Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required", "2nd Attempt"],
+    "copyable-message": "Left another voicemail, and sent another text, asking for an update regarding the water samples they've yet to send us. (KH)"
+},
+{
+    "name": "Certify - Followup - Voicemail Instructing Tenant To Return Samples",
+    "summary": "-",
+    "tags": ["Tenants", "Followup", "Voicemail", "Further Correspondence Required", "2nd Attempt"],
+    "copyable-message": "Left another voicemail, and sent another text, asking for an update regarding the water samples they've yet to send us. (KH)"
 },
 
 
