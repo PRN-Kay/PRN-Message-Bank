@@ -164,9 +164,9 @@
 
 
 {
-    "name": "*Certify - Phoned Tenant Who Had Reason for Not Sending - Hold Off Before Re-Contacting",
+    "name": "*Certify - Followup - Tenant Who Had Reason for Not Sending - Hold Off Before Re-Contacting",
     "summary": "-",
-    "tags": ["Certify", "Variables", "Tenants", "Outbound Call", "Hold Off", "Further Correspondence Required"],
+    "tags": ["Certify", "Variables", "Tenants", "Followup", "Hold Off", "Further Correspondence Required"],
     "copyable-message": "Tenant says they've not done it because [Reason for Not Sending]. I said we'd hold off for a while before reaching out again. (KH)"
 },
 
@@ -176,10 +176,10 @@
 
 
 {
-    "name": "Certify - Followup Phone Call - XXXXXXX",
+    "name": "Certify - Followup - Tenant Apologises and Will Send",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Further Correspondence Required"],
-    "copyable-message": "XXXXXXXXXXXXXX (KH)"
+    "tags": ["Certify", "Tenants", "Followup", "Awaiting Samples"],
+    "copyable-message": "Tenant apologises and says they'll send it to us soon (KH)"
 },
 
 
