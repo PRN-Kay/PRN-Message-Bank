@@ -436,12 +436,30 @@
 {
     "name": "Certify - Tenant Reply - Threw Kit In Bin - Replacement Required",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Tenant Reply", "Replacement Required"],
+    "tags": ["Certify", "Tenants", "Reply", "Replacement Required"],
     "copyable-message": "Tenant replied to say they threw the water sampling kit in the bin. I replied to say that lead testing is a legal requirement for their tenancy, and that we'll send them another water sampling kit soon, and that they'll receive a despatch confirmation email from Royal Mail when we do this. Replacement Kit Required. (KH)"
 },
 
 
 
+
+
+
+
+
+{
+    "name": "Certify - Letting Agent Reply - They'll Contact the Tenant Chasing Samples",
+    "summary": "-",
+    "tags": ["Certify", "Letting Agent", "Reply", "Awaiting Samples"],
+    "copyable-message": "The letting agent told me they would contact the tenant to tell them to return the water samples themselves (KH)"
+},
+{
+    "name": "Certify - Letting Agent Reply - They'll Take Samples During Next Visit and Return Them to Us",
+    "summary": "-",
+    "tags": ["Certify", "Letting Agent", "Reply", "Awaiting Samples"],
+    "copyable-message": "The letting agent told me this property is vacant, so they will take the samples during their next visit and return them to us themselves (KH)"
+},
+    
 
 
     
