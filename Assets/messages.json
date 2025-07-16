@@ -170,10 +170,10 @@
 
 
 {
-    "name": "Certify - Followup - Tenant Apologises and Will Send",
+    "name": "*Certify - Followup - Tenant Apologises and Will Send",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Followup", "Awaiting Receipt"],
-    "copyable-message": "Tenant apologises and says they'll send it to us soon (KH)"
+    "tags": ["Certify", "Tenants", "Variables", "Followup", "Awaiting Receipt"],
+    "copyable-message": "Tenant apologises and says they'll send it to us [When The Tenant Will Send The Kit] (KH)"
 },
 {
     "name": "Certify - Followup - 2nd Text Instructing Tenant to Return Samples",
