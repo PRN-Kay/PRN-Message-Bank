@@ -132,7 +132,7 @@
 {
     "name": "Certify - Phoned Tenant - Tenant Will Send",
     "summary": "Add this comment to certify if the tenant will send kit.",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Sampling Kit Incoming"],
+    "tags": ["Certify", "Tenants", "Outbound Call", "Awaiting Receipt"],
     "copyable-message": "Tenant hadn't done it yet, but now that they've been prompted, they'll send us the samples back to us. (KH)"
 },
 {
