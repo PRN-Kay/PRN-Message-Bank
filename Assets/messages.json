@@ -96,7 +96,7 @@
 {
     "name": "Certify - Phoned Tenant - Sent Kit Recently - Awaiting Receipt",
     "summary": "-",
-    "tags": ["Certify", "Outbound Call", "Tenants", "Lead", "Kit Resent"],
+    "tags": ["Certify", "Outbound Call", "Tenants", "Lead", "Awaiting Receipt"],
     "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and they told me they've sent it recently. Will await receipt of package (KH)"
 },
 {
