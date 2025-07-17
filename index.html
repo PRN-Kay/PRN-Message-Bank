@@ -704,20 +704,20 @@
     let messages = [];
     let filteredMessages = [];
     let expandedCard = null;
-    // Word coloring configuration
+
+    // Word colouring configuration
     const coloredWordsConfig = {
         "Phoned": "cyan",
         "Email": "orange",
         "Certify": "yellow",
         "Letting Agent": "blue",
         "Tenant": "pink",
-        // Add more word-color mappings as needed
+        // Add more word-colour mappings as needed
     };
 
-    // Initialize the app
+    // Initialise the app
     async function init() {
         try {
-            // Try to load from Assets/messages.json
             const response = await fetch('Assets/messages.json');
             if (response.ok) {
                 messages = await response.json();
@@ -729,7 +729,6 @@
             messages = sampleMessages;
         }
 
-        // Add unique IDs to messages
         messages = messages.map((msg, index) => ({ ...msg, id: index }));
         filteredMessages = [...messages];
         populateTagFilter();
@@ -737,26 +736,27 @@
         setupEventListeners();
     }
 
-    // Get current time in HH:MM format
+    // Get current date and time in "17 Jul, 15:08" format
     function getCurrentTime() {
         const now = new Date();
+        const day = now.getDate().toString().padStart(2, '0');
+        const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        const month = monthNames[now.getMonth()];
         const hours = now.getHours().toString().padStart(2, '0');
         const minutes = now.getMinutes().toString().padStart(2, '0');
-        return `${hours}:${minutes}`;
+        return `${day} ${month}, ${hours}:${minutes}`;
     }
 
-    // Extract variables from message text (now looking for [text] format)
     function extractVariables(text) {
         const matches = text.match(/\[([^\]]+)\]/g);
         return matches ? [...new Set(matches)].sort() : [];
     }
 
-    // Generate a safe ID for a variable by removing special characters and spaces
     function generateVariableId(variable) {
         return variable.replace(/[\[\]]/g, '').replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
     }
 
-    // Apply color to specific words in any text
     function applyWordColors(text) {
         if (!text) return text;
         let result = text.toString();
@@ -767,27 +767,23 @@
         return result;
     }
 
-    // Replace variables in text with user input and optionally add time
     function replaceVariables(text, messageId, forDisplay = false) {
         const variables = extractVariables(text);
         let result = text;
-        
+
         variables.forEach(variable => {
             const variableId = generateVariableId(variable);
             const input = document.getElementById(`var-${messageId}-${variableId}`);
             if (input && input.value.trim()) {
-                // Replace all instances of this variable (including the square brackets)
                 result = result.replace(new RegExp(escapeRegExp(variable), 'g'), input.value.trim());
             }
         });
 
-        // Add time if checkbox is checked
         const addTimeCheckbox = document.getElementById('addTimeCheckbox');
         if (addTimeCheckbox && addTimeCheckbox.checked) {
             result += ` - ${getCurrentTime()}`;
         }
 
-        // Apply word colors if this is for display
         if (forDisplay) {
             result = applyWordColors(result);
         }
@@ -795,12 +791,10 @@
         return result;
     }
 
-    // Escape special regex characters
     function escapeRegExp(string) {
         return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
-    // Populate tag filter dropdown
     function populateTagFilter() {
         const allTags = new Set();
         messages.forEach(msg => {
@@ -811,7 +805,7 @@
 
         const filterSelect = document.getElementById('filterSelect');
         filterSelect.innerHTML = '<option value="">All Tags</option>';
-        
+
         [...allTags].sort().forEach(tag => {
             const option = document.createElement('option');
             option.value = tag;
@@ -820,13 +814,11 @@
         });
     }
 
-    // Filter messages based on search and tag
     function filterMessages() {
         const searchTerm = document.getElementById('searchInput').value.toLowerCase();
         const selectedTag = document.getElementById('filterSelect').value;
 
         filteredMessages = messages.filter(msg => {
-            // Check all fields for search term
             const matchesSearch = !searchTerm || 
                 Object.values(msg).some(value => {
                     if (typeof value === 'string') {
@@ -848,7 +840,6 @@
         renderMessages();
     }
 
-    // Render message cards with colored words in all text elements
     function renderMessages() {
         const grid = document.getElementById('messagesGrid');
         const noResults = document.getElementById('noResults');
@@ -860,7 +851,7 @@
         }
 
         noResults.style.display = 'none';
-        
+
         grid.innerHTML = filteredMessages.map(msg => {
             const variables = extractVariables(msg['copyable-message']);
             const tagsHtml = Array.isArray(msg.tags) ? 
@@ -882,7 +873,7 @@
                                 <h4 class="variables-title">Variables</h4>
                                 ${variables.map(variable => {
                                     const variableId = generateVariableId(variable);
-                                    const displayText = variable.replace(/[\[\]]/g, ''); // Remove brackets for display
+                                    const displayText = variable.replace(/[\[\]]/g, '');
                                     return `
                                         <input type="text" 
                                                class="variable-input" 
@@ -903,42 +894,38 @@
         }).join('');
     }
 
-    // Update message preview with variable substitution and time
     function updateMessagePreview(messageId) {
         const msg = messages.find(m => m.id === messageId);
         if (!msg) return;
-        
+
         const previewElement = document.getElementById(`message-preview-${messageId}`);
         if (previewElement) {
             previewElement.innerHTML = replaceVariables(msg['copyable-message'], messageId, true);
         }
     }
 
-    // Copy message to clipboard
     async function copyMessage(messageId, event) {
         event.stopPropagation();
-        
+
         const msg = messages.find(m => m.id === messageId);
         if (!msg) return;
-        
+
         const finalMessage = replaceVariables(msg['copyable-message'], messageId);
-        
+
         try {
             await navigator.clipboard.writeText(finalMessage);
-            
-            // Visual feedback
+
             const btn = event.target;
             const originalText = btn.textContent;
             btn.textContent = 'Copied!';
             btn.style.backgroundColor = '#60bc1b';
-            
+
             setTimeout(() => {
                 btn.textContent = originalText;
                 btn.style.backgroundColor = '';
             }, 1500);
         } catch (error) {
             console.error('Failed to copy:', error);
-            // Fallback for older browsers
             const textArea = document.createElement('textarea');
             textArea.value = finalMessage;
             document.body.appendChild(textArea);
@@ -948,15 +935,14 @@
         }
     }
 
-    // Toggle card expansion
     function toggleCard(messageId) {
         const cards = document.querySelectorAll('.message-card');
         const clickedCard = document.querySelector(`[data-message-id="${messageId}"]`);
-        
+
         if (expandedCard && expandedCard !== clickedCard) {
             expandedCard.classList.remove('expanded');
         }
-        
+
         if (clickedCard.classList.contains('expanded')) {
             clickedCard.classList.remove('expanded');
             expandedCard = null;
@@ -967,24 +953,21 @@
         }
     }
 
-    // Setup event listeners
     function setupEventListeners() {
         const searchInput = document.getElementById('searchInput');
         const filterSelect = document.getElementById('filterSelect');
         const addTimeCheckbox = document.getElementById('addTimeCheckbox');
-        
+
         searchInput.addEventListener('input', filterMessages);
         filterSelect.addEventListener('change', filterMessages);
-        
-        // Update previews when time checkbox is toggled
+
         addTimeCheckbox.addEventListener('change', () => {
             if (expandedCard) {
                 const messageId = parseInt(expandedCard.dataset.messageId);
                 updateMessagePreview(messageId);
             }
         });
-        
-        // Add click handlers to message cards
+
         document.addEventListener('click', (e) => {
             const card = e.target.closest('.message-card');
             if (card && !e.target.classList.contains('copy-btn') && !e.target.classList.contains('variable-input')) {
@@ -994,7 +977,6 @@
         });
     }
 
-    // Initialize app when DOM is loaded
     document.addEventListener('DOMContentLoaded', init);
 </script>
 </body>
