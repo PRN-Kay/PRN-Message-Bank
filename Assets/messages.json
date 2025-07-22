@@ -536,6 +536,23 @@
     "copyable-message": "The tenant Emailed back to say he'll be home tomorrow and that it would be a suitable date for delivery. However, this isn't adequate notice for Royal Mail, so I replied explaining that they require 2–3 days' notice to allow for delivery. Awaiting response. (KH)"
 },
 
+
+
+
+
+{
+    "name": "Certify - Kit Returned to Sender",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Kit Required"],
+    "copyable-message": "Marked as Returned to Sender on [Date Returned to Sender] by Royal Mail. Replacement Required. (KH)"
+},
+{
+    "name": "Certify - Called Tenant - Kit Returned to Us as Evidenced by Proof of Delivery Image",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Returned to Sender", "Royal Mail Fault", "Replacement Kit Required"],
+    "copyable-message": "Tenant didn't receive kit. Royal Mail erroneously delivered the sampling kit back to us, as evidenced by their Proof of delivery image (KH)"
+},
+
     
 
     
@@ -544,11 +561,5 @@
     "summary": "Add this comment to certify when despatching a replacement sampling kit.",
     "tags": ["Certify", "Tenants"],
     "copyable-message": "Replacement Sampling kit sent out today (KH)"
-},
-{
-    "name": "Certify - Kit Returned to Sender",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Returned to Sender", "Replacement Kit Required"],
-    "copyable-message": "Marked as Returned to Sender on [Date Returned to Sender] by Royal Mail. Replacement Required. (KH)"
 }
 ]
