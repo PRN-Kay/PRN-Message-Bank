@@ -227,25 +227,31 @@
     "name": "Certify - Left a Voicemail Chasing Samples - Text Later Today",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
-    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
+    "copyable-message": "Left a voicemail asking for an update regarding their sampling kit. A text will have been sent later in the day if the tenant doesn't get back to us. (KH)."
 },
 {
     "name": "Certify - Left a Voicemail Chasing Samples - Text Next Working Day",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
-    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
+    "copyable-message": "Left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
 },
 {
     "name": "Certify - RtS - Not Collected - Left a Voicemail - Text Later Today",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
-    "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
+    "copyable-message": "Left a voicemail asking for an update regarding their sampling kit. Given the time, I'll send them a followup text next working day. (KH)"
 },
 {
     "name": "Certify - Left a Followup Voicemail Asking for an Update",
     "summary": "-",
     "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
     "copyable-message": "No answer - left a voicemail asking for an update regarding their sampling kit. (KH)"
+},
+{
+    "name": "Certify - 2nd Voicemail + 2nd Text Chasing Samples",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
+    "copyable-message": "Left a 2nd voicemail and sent a 2nd text asking for an update regarding their sampling kit, mentioning that this issue will be escaleted to their letting agent if we don't hear from them or receive their samples soon. (KH)."
 },
 
 
