@@ -136,10 +136,16 @@
     "copyable-message": "Phoned the tenant to chase after water samples, and they said they don't remember receiving the sampling kit, but that they'll have a look for it and get back to us. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Tenant Will Send",
+    "name": "Certify - 1st Phonecall to Tenant - Will Send Kit",
     "summary": "Add this comment to certify if the tenant will send kit.",
     "tags": ["Certify", "Tenants", "Outbound Call", "Awaiting Receipt"],
-    "copyable-message": "Tenant hadn't done it yet, but now that they've been prompted, they'll send us the samples back to us. (KH)"
+    "copyable-message": "1st Phonecall - Tenant hadn't done it yet, but now that they've been prompted, they'll send us the samples back to us. (KH)"
+},
+{
+    "name": "Certify - 2nd Phonecall to Tenant - Will Send Kit",
+    "summary": "Add this comment to certify if the tenant will send kit.",
+    "tags": ["Certify", "Tenants", "Outbound Call", "Awaiting Receipt"],
+    "copyable-message": "2nd Phonecall - Tenant hadn't done it yet, but now that they've been prompted, they'll send us the samples back to us. (KH)"
 },
 {
     "name": "Certify - Phoned Tenant - Did Scottish Water Test - Will Now Send Samples to Us",
