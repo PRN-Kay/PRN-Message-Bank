@@ -24,6 +24,12 @@
     "copyable-message": "Hi [Tenant's Forename],\n\nUnfortunately, we haven't received your water samples at our lab—they may have gone missing in the post.\n\nAs these samples are required for your landlord's records, we'll be sending you a replacement water sampling kit this week. It should arrive with you shortly.\n\nIf you have any questions or need help with anything, just let us know — we're happy to assist 😊\n\nAll the best,"
 },
 {
+    "name": "*Followup Email - STILL Awaiting Samples After Tenant Said They'd Send",
+    "summary": "Send this email to tenants who sent a sampling kit if we haven't received it back yet.",
+    "tags": ["Outbound Email", "Tenants", "Lead", "Reply", "Further Correspondence Required", "Variables"],
+    "copyable-message": "Hi [Tenant Forename],\n\nThis is Kaelin from PRN Water Services, following up for the [First/Second/Third] time regarding the water sampling kit you indicated you would return following our last communication [Date of Last Communication].\n\nAs of today, we have still not received your samples at the lab.\n\nThe kits are sent with tracked return postage, and Royal Mail has no record of the package being returned. Given that deliveries typically arrive within 2–3 working days, it appears the sampling kit has not yet been posted.\n\nAs a reminder, lead testing is a legal requirement for your tenancy.\n\nPlease confirm whether you have posted the samples, and if not, let us know when you expect to return them.\n\nBest regards,"
+},
+{
     "name": "Email Tenant - Redelivery After Tenant Not In for 1st Delivery",
     "summary": "-",
     "tags": ["Lead", "Outbound Email", "Tenants", "Followup", "Replacement Kit Required"],
@@ -34,7 +40,7 @@
     "summary": "-",
     "tags": ["Lead", "Outbound Email", "Tenants", "Followup", "Proof of Delivery"],
     "copyable-message": "Water Sampling Kit - Proof of Delivery\n\nHi [Tenant's Forename], as requested, I've attached a PDF Proof-of-Delivery image to this email.\n\nI've got my fingers crossed you can find it 🤞😁\n\nBest Regards,"
-},
+},   
     
     
     
