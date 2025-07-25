@@ -57,7 +57,7 @@
     "name": "Followup Email to Tenant - 2nd Email Asking for Sample Return Info",
     "summary": "-",
     "tags": ["Tenants", "Outbound Email", "Further Correspondence Required", "2nd Attempt"],
-    "copyable-message": "2nd Reminder - Lead Testing Requirement\n\nHi [Tenant's Forename],\n\nThis is Kaelin from PRN Water Services. I'm following up for a second time regarding the water sampling kit we sent [Date of Sample Delivery]. As of today, your water samples have not yet been received at the lab.\n\nPlease confirm when you expect to return the completed samples.\n\nAs a reminder, lead testing is a legal requirement for your tenancy. If we don't hear from you or receive your samples soon, we'll need to escalate the matter to your letting agent.\n\nBest regards,"
+    "copyable-message": "2nd Reminder - Lead Testing Requirement\n\nHi [Tenant's Forename],\n\nThis is Kaelin from PRN Water Services. I'm following up for a second time regarding the water sampling kit we sent [Date of Sample Delivery]. As of today, your water samples have not yet been received at the lab.\n\nPlease confirm when you expect to return the completed samples.\n\nAs a reminder, lead testing is a legal requirement for your tenancy. If we don't hear from you or receive your samples within 7 days, we'll need to escalate the matter to your letting agent.\n\nBest regards,"
 },
 {
     "name": "Followup Email to Tenant - Tenant THINKS They've Sent the Kit, But No Receipt and No Tracking",
