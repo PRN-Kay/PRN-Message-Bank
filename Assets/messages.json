@@ -66,6 +66,12 @@
     "copyable-message": "Hi [Tenant's forename],\n\nI hope you're well.\n\nJust to confirm, we’ve not yet received your samples. Delivery typically takes no longer than three working days.\n\nUnfortunately, we don’t have any tracking information for your return. This may be because (a) the barcode wasn’t scanned via the Royal Mail app prior to posting—which is completely understandable—or (b) the kit hasn’t yet been posted back to us.\n\nIf you could kindly check whether the sampling kit is still at your property and let us know either way, it would be much appreciated.\n\nBest regards,\n"
 },
 {
+    "name": "Certify - Tenant Says They've Sent the Kit, But No Receipt and No Tracking",
+    "summary": "-",
+    "tags": ["Certify", "Tenants", "Replacement Required"],
+    "copyable-message": "Tenant replied saying they posted [time ago the kit was allegedly posted], and asked for a replacement kit. I said we'll send a new one, and that they should us the Royal Mail app to scan the barcode this time. (KH)"
+},
+{
     "name": "Reply to Tenant - Tenant Will Send Kit - Thanks",
     "summary": "-",
     "tags": ["Lead", "Outbound Email", "Tenants", "Reply"],
