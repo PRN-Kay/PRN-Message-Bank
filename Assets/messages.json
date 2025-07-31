@@ -40,6 +40,18 @@
     "summary": "-",
     "tags": ["Lead", "Outbound Email", "Tenants", "Followup", "Proof of Delivery"],
     "copyable-message": "Water Sampling Kit - Proof of Delivery\n\nHi [Tenant's Forename], as requested, I've attached a PDF Proof-of-Delivery image to this email.\n\nI've got my fingers crossed you can find it 🤞😁\n\nBest Regards,"
+},
+
+
+
+
+
+
+{
+    "name": "Email Agent - 2x Delivery Failure - Can Agent Collect?",
+    "summary": "-",
+    "tags": ["Lead", "Outbound Email", "Agent", "Further Correspondence Required"],
+    "copyable-message": "Difficulty Delivering Water Sampling Kit – [Property Address]\n\nHi [Agent Name],\n\nI hope you and the team are keeping well.\n\nWe've encountered some difficulty delivering a water sampling kit to [Property Address]. Despite posting two kits to the property, both have been returned to us by Royal Mail.\n\nWould it be possible for someone from [Letting Agency Name] to collect the water sample directly — perhaps during a scheduled inspection or visit to the property?\n\nKind regards,"
 },   
     
     
