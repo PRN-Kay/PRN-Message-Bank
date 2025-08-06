@@ -118,64 +118,40 @@
 
     
 {
-    "name": "Certify - Phoned Tenant - Sent Kit Recently - Awaiting Receipt",
+    "name": "Certify - Tenant Sent Kit Recently - Awaiting Receipt",
     "summary": "-",
-    "tags": ["Certify", "Outbound Call", "Tenants", "Lead", "Awaiting Receipt"],
-    "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and they told me they've sent it recently. Will await receipt of package (KH)"
+    "tags": ["Certify", "Outbound", "Tenants", "Lead", "Awaiting Receipt"],
+    "copyable-message": "Tenant told me they've sent it recently. Will await receipt of package (KH)"
 },
 {
     "name": "Certify - Phoned Tenant - Unsure - Asking Flatmates",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Lead", "Outbound Call", "Further Correspondence Required"],
-    "copyable-message": "Phoned the tenant to chase about water sampling kit, and they weren't sure what happened to it, and they said they'd ask their flatmates. (KH)"
+    "tags": ["Certify", "Tenants", "Lead", "Outbound", "Further Correspondence Required"],
+    "copyable-message": "Tenant wasn't sure what happened to the kit, and they said they'd ask their flatmates and get back to us. (KH)"
 },
 {
     "name": "Certify - Phoned Tenant - Declined Call - Sent Text",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Call Failure", "Outbound Text", "Further Correspondence Required"],
+    "tags": ["Certify", "Tenants", "Outbound", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Phoned the tenant to chase them up about the sampling kit but they declined the call, so I sent them a text. (KH)."
 },
 {
-    "name": "Certify - Phoned Tenant - Sent Us Kit A While Ago - No RM Tracking - Lost in Post - Sent Text",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Replacement Kit Required", "Outbound Text", "Further Correspondence Required"],
-    "copyable-message": "Phoned the tenant to chase them up for the water sampling kit, and they said they sent it back to us a while ago. I tried checking the status of their delivery via Royal Mail, but there was no tracking information available, likely because the tenant didn't download the royal mail app to scan the barcode. I've sent them a text to inform them, and told them we'd send out a replacement water sampling kit. (KH)."
-},
-{
-    "name": "Certify - Phoned Tenant - Tenant Didn't Receive Kit",
+    "name": "Certify - Tenant Didn't Receive Kit",
     "summary": "Add this comment to certify if the tenant didn't receive the kit.",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Replacement Kit Required"],
-    "copyable-message": "Phoned the tenant to chase them up about the sampling kit, and they said they didn't receive it. Replacement Required. (KH)"
+    "tags": ["Certify", "Tenants", "Outbound", "Replacement Kit Required"],
+    "copyable-message": "Tenant didn't receive kit. Replacement Required. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Tenant Doesn't Remember Receiving Kit - Will Look for It and Get Back to Us",
+    "name": "Certify - Tenant Doesn't Remember Receiving Kit - Will Look for It and Get Back to Us",
     "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Further Correspondence Required"],
-    "copyable-message": "Phoned the tenant to chase after water samples, and they said they don't remember receiving the sampling kit, but that they'll have a look for it and get back to us. (KH)"
+    "tags": ["Certify", "Tenants", "Outbound", "Further Correspondence Required"],
+    "copyable-message": "Tenant doesn't remember receiving the sampling kit, but that they'll have a look for it and get back to us. (KH)"
 },
 {
-    "name": "Certify - 1st Phonecall to Tenant - Will Send Kit",
+    "name": "Certify - Tenant Will Send Kit Now",
     "summary": "Add this comment to certify if the tenant will send kit.",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Awaiting Receipt"],
-    "copyable-message": "1st Phonecall - Tenant hadn't done it yet, but now that they've been prompted, they'll send us the samples back to us. (KH)"
-},
-{
-    "name": "Certify - 2nd Phonecall to Tenant - Will Send Kit",
-    "summary": "Add this comment to certify if the tenant will send kit.",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Awaiting Receipt"],
-    "copyable-message": "2nd Phonecall - Tenant hadn't done it yet, but now that they've been prompted, they'll send us the samples back to us. (KH)"
-},
-{
-    "name": "Certify - Phoned Tenant - Did Scottish Water Test - Will Now Send Samples to Us",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Further Correspondence Required"],
-    "copyable-message": "Phoned the tenant to chase after water samples, and they said that, because they did the Scottish Water tests, they thought they didn't need to do sampling for us. I told them that Scottish Water's testing is insufficient and that they'll need to send water samples to us. They accepted this, and said they'd send the kit back to us. (KH)"
-},
-{
-    "name": "Certify - Phoned Tenant - Tenant Didn't Have Time to Talk",
-    "summary": "-",
-    "tags": ["Certify", "Tenants", "Outbound Call", "Further Correspondence Required"],
-    "copyable-message": "Tenant said he didn't have time to talk at the moment. (KH)"
+    "tags": ["Certify", "Tenants", "Outbound", "Awaiting Receipt"],
+    "copyable-message": "Tenant hasn't sent the kit yet, but now that they've been prompted, they'll send us the samples back to us. (KH)"
 },
 
 
