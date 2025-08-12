@@ -573,5 +573,21 @@
     "summary": "Add this comment to certify when despatching a replacement sampling kit.",
     "tags": ["Certify", "Tenants"],
     "copyable-message": "Replacement Sampling kit sent out today (KH)"
+},
+
+
+
+    
+{
+    "name": "LRA Cert - Shower Scale & Garden Hose",
+    "summary": "-",
+    "tags": ["Certificate", "LRA"],
+    "copyable-message": "1. Shower head has evidence of scaling.\n\n2. Re garden hose water sitting in pipework."
+},
+{
+    "name": "LRA Cert - Capped Washing Machine Valve",
+    "summary": "-",
+    "tags": ["Certificate", "LRA"],
+    "copyable-message": "There is a capped washing machine valve but due to the design & age of the kitchen its unlikely to be used in the near future but should an appliance be connected to it the the supply should be thoroughly flushed through first."
 }
 ]
