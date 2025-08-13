@@ -114,13 +114,22 @@
     "copyable-message": "Tenant's phone number is invalid, so I've sent an email chasing after water samples (KH)"
 },
 {
-    "name": "Certify - No Trace of Despatched Order on Royal Mail Site",
+    "name": "Certify - Send Replacement - No Trace of Despatched Order on Royal Mail Site",
     "summary": "-",
     "tags": ["Certify Note", "Lead", "Replacement Kit Required"],
     "copyable-message": "Noticed there's no trace of delivery on Royal Mail website. Replacement kit required (KH)"
 },
+{
+    "name": "Certify - Send Replacement - Still Not Received",
+    "summary": "-",
+    "tags": ["Certify Note", "Lead", "Replacement Kit Required"],
+    "copyable-message": "Told tenant that, since we still haven't received their sampling kit, we'll need to send them a replacement. (KH)"
+},
 
 
+
+
+    
 
     
 {
