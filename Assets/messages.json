@@ -602,9 +602,14 @@
     "tags": ["Excel Note", "Agent to Resolve"],
     "copyable-message": "1st delivery failed on [Date of 1st Failed Delivery] & not collected during 2-week retention period.\n2nd delivery failed on [Date of 2nd Failed Delivery] & not collected during 2-week retention period.\nTenant didn't respond to [Number of T Communications Not Replied To] voicemails & texts asking for reasons for failed delivery and failure to collect."
 },
+{
+    "name": "Excel - Attempt Details - Kit Not Returned - No Reply to 2 Communications",
+    "summary": "-",
+    "tags": ["Excel Note", "Agent to Resolve"],
+    "copyable-message": "Sampling kit delivered [Date Samples Delivered].\n1st voicemail & text sent on [Date of 1st Communication].\n2nd voicemail & text sent on [Date of 2nd Communication].\nNo response, and samples not received."
+},
 
     
-
 
     
 {
