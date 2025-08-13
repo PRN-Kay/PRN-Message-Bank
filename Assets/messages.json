@@ -80,7 +80,7 @@
 {
     "name": "Certify - Tenant Says They've Sent the Kit, But No Receipt and No Tracking",
     "summary": "-",
-    "tags": ["Certify Note", "Tenants", "Replacement Required"],
+    "tags": ["Certify Note", "Tenants", "Replacement Kit Required"],
     "copyable-message": "Tenant replied saying they posted [time ago the kit was allegedly posted], and asked for a replacement kit. I said we'll send a new one, and that they should us the Royal Mail app to scan the barcode this time. (KH)"
 },
 {
