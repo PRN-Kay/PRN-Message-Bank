@@ -589,7 +589,7 @@
     "name": "Certify - Job Reverted Back to Agent to Resolve",
     "summary": "-",
     "tags": ["Certify Note", "Letting Agent", "Outbound", "Agent to Resolve", "Awaiting Correspondence"],
-    "copyable-message": "Tenant hasn't sent the kit yet, but now that they've been prompted, they'll send us the samples back to us. (KH)"
+    "copyable-message": "Job reverted back to letting agent to resolve. (KH)"
 },
 
 
