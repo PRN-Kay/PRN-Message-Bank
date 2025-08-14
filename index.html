@@ -682,9 +682,10 @@
 
         <section class="controls">
             <input type="text" class="search-input" placeholder="Search messages..." id="searchInput">
-            <select class="filter-select" id="filterSelect">
+            <select class="filter-select" id="filterSelect" multiple size="5">
                 <option value="">All Tags</option>
             </select>
+
             <label class="time-option">
                 <input type="checkbox" id="addTimeCheckbox" checked>
                 Add Time
@@ -815,29 +816,31 @@
     }
 
     function filterMessages() {
-        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-        const selectedTag = document.getElementById('filterSelect').value;
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
 
-        filteredMessages = messages.filter(msg => {
-            const matchesSearch = !searchTerm || 
-                Object.values(msg).some(value => {
-                    if (typeof value === 'string') {
-                        return value.toLowerCase().includes(searchTerm);
-                    } else if (Array.isArray(value)) {
-                        return value.some(item => 
-                            item.toLowerCase().includes(searchTerm)
-                        );
-                    }
-                    return false;
-                });
+    // Get an array of selected tag values
+    const selectedOptions = Array.from(document.getElementById('filterSelect').selectedOptions)
+                                 .map(opt => opt.value)
+                                 .filter(v => v); // Remove empty string (the "All Tags" option)
 
-            const matchesTag = !selectedTag || 
-                (Array.isArray(msg.tags) && msg.tags.includes(selectedTag));
+    filteredMessages = messages.filter(msg => {
+        const matchesSearch = !searchTerm || 
+            Object.values(msg).some(value => {
+                if (typeof value === 'string') {
+                    return value.toLowerCase().includes(searchTerm);
+                } else if (Array.isArray(value)) {
+                    return value.some(item => item.toLowerCase().includes(searchTerm));
+                }
+                return false;
+            });
 
-            return matchesSearch && matchesTag;
-        });
+        const matchesTags = selectedOptions.length === 0 ||
+            (Array.isArray(msg.tags) && selectedOptions.every(tag => msg.tags.includes(tag)));
 
-        renderMessages();
+        return matchesSearch && matchesTags;
+    });
+
+    renderMessages();
     }
 
     function renderMessages() {
@@ -981,3 +984,4 @@
 </script>
 </body>
 </html>
+
