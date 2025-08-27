@@ -620,6 +620,31 @@
 
     
 
+{
+    "name": "LRA Cert - Page 6 - Water Temperature Issue - Hot Water Switched Off",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "The hot water system wasn't switched on at the time of the assessment so the temperature of the hot water could not be tested."
+},
+{
+    "name": "LRA Cert - Page 6 - Water Temperature Recommendation - Hot Water Switched Off",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "The tenant confirmed that the hot water system is working correctly when switched on."
+},
+
+{
+    "name": "LRA Cert - Page 7 - Cold Water Storage Issue - Tank in Roof Void",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "There was no access as the tank as its located in the common was roof void."
+},
+{
+    "name": "LRA Cert - Page 7 - Cold Water Storage Recommendation - Tank in Roof Void Maintained by Factor",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "None as it's maintained by the factor."
+},
     
 {
     "name": "LRA Cert - Shower Scale & Garden Hose",
@@ -627,10 +652,61 @@
     "tags": ["Certificate", "LRA"],
     "copyable-message": "1. Shower head has evidence of scaling.\n\n2. Re garden hose water sitting in pipework."
 },
+
 {
-    "name": "LRA Cert - Capped Washing Machine Valve",
+    "name": "LRA Cert - Page 13ish - Pipework - Dead End",
     "summary": "-",
-    "tags": ["Certificate", "LRA"],
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "Water sitting in pipework."
+},
+{
+    "name": "LRA Cert - Page 13ish - Pipework - Capped Washing Machine Valve",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
     "copyable-message": "There is a capped washing machine valve but due to the design & age of the kitchen its unlikely to be used in the near future but should an appliance be connected to it the the supply should be thoroughly flushed through first."
+},
+{
+    "name": "LRA Cert - Page 13ish - Pipework - 2 Supplies but 1 Used",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "There are 2 supplies when only one will be used, so the other should be capped. When the washing machine is connected it should be be put on a rinse cycle to ensure the supply has been thoroughly flushed through"
+},
+    
+{
+    "name": "LRA Cert - Part 8 - Whirlpool Bath Issue",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "Bath jets has evidence of scaling."
+},
+{
+    "name": "LRA Cert - Part 8 - Whirlpool Bath Reccomendation",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "Depending on usage the bath including the jets should be thoroughly cleaned on a regular basis, if the tenant is unsure how to clean the jets there are various you tube videos available online."
+},
+    
+{
+    "name": "LRA Cert - Part 9 - Occupied Property Issue",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "If the property is left unoccupied for longer periods then there will be water laying in the pipework."
+},
+{
+    "name": "LRA Cert - Part 9 - Unoccupied Property Issue",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "The property was unoccupied at the time of inspection so water will have laying in the pipe work."
+},
+{
+    "name": "LRA Cert - Part 9 - Occupied Property Recommendation",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "If the property is left unoccupied for longer periods then both the hot & cold supplies should be thoroughly flushed through before use."
+},
+{
+    "name": "LRA Cert - Part 9 - Unoccupied Property Recommendation",
+    "summary": "-",
+    "tags": ["Certificate", "LRA Cert"],
+    "copyable-message": "Before the start of the new tenancy all hot & cold supplies should be thoroughly flushed through and if the property is left unoccupied for longer periods once the tenancy has started then both the hot & cold supplies should be thoroughly flushed through before use."
 }
 ]
