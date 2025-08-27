@@ -1,54 +1,59 @@
 [
 {
-    "name": "*Email Tenant - Lead Test Requirement",
+    "name": "*Message Tenant - Lead Test Requirement",
     "summary": "Send this email to tenants to inform them of the incoming water sampling kit.",
     "tags": ["Lead", "Outbound", "Tenants", "Further Correspondence Required", "Variables"],
-    "copyable-message": "Good [Morning/Afternoon],\n\nI am emailing you to advise that you will shortly receive a sampling kit from PRN Water Services in the post. The purpose of this sampling kit is to collect water samples from your home, and then post them back to our laboratory so that we can test the water for lead contents.\n\nYour letting agents, [Lettting Agent Name], have employed us to carry out the lead testing for their properties. Accordingly, please could you collect water samples by following the instruction manual found inside the kit and post them back to us using the included pre-paid returns label as soon as possible. A video guide on how to collect the samples can be viewed below:\n\nhttps://youtu.be/S3yWIWTO8TQ\n\nThis testing is a one-off requirement and has been implemented as a result of the Scottish Government updating the Repairing Standard, where rental properties in Scotland built before 1970 now need their drinking water tested for traces of lead. You can find more information on the legislation by visiting our website:\n\nhttps://www.prnwaterservices.com/the-legislation-information\n\nIf you have any questions or concerns, please do not hesitate to reach out to us."
+    "copyable-message": "Good [Morning/Afternoon],\n\nI am contacting you to advise that you will shortly receive a sampling kit from PRN Water Services in the post. The purpose of this sampling kit is to collect water samples from your home, and then post them back to our laboratory so that we can test the water for lead contents.\n\nYour letting agents, [Lettting Agent Name], have employed us to carry out the lead testing for their properties. Accordingly, please could you collect water samples by following the instruction manual found inside the kit and post them back to us using the included pre-paid returns label as soon as possible. A video guide on how to collect the samples can be viewed below:\n\nhttps://youtu.be/S3yWIWTO8TQ\n\nThis testing is a one-off requirement and has been implemented as a result of the Scottish Government updating the Repairing Standard, where rental properties in Scotland built before 1970 now need their drinking water tested for traces of lead. You can find more information on the legislation by visiting our website:\n\nhttps://www.prnwaterservices.com/the-legislation-information\n\nIf you have any questions or concerns, please do not hesitate to reach out to us."
 },
 {
-    "name": "*Email Tenant - Sample Return Reminder",
+    "name": "*Message Tenant - Sample Return Reminder",
     "summary": "Send this email to tenants to remind them to send their water sampling kits back to us.",
     "tags": ["Outbound", "Tenants", "Lead", "Further Correspondence Required", "Variables"],
     "copyable-message": "1st Reminder - Lead Resting Requirement for [Letting Agent Name]\n\nHi [Tenant's Foreename],\n \n[PRN Agent Name] from PRN Water Services here. We've been instructed by your letting agents, [Letting Agent Name], to carry out a Water Test at your rental property to ensure it's safe from lead toxicity. A sampling kit was delivered to your address on [Date of Delivery] for this purpose.\n \nWe haven't yet received your water samples at our laboratory yet. Please reply to this email confirming when you expect to return them.\n\nBest regards,"
 },
 {
-    "name": "*Email Tenant - Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
+    "name": "*Message Tenant - Didn't Receive Kit - Re-Sending Sampling Kit After Non-Receipt",
     "summary": "Send this email to tenants who need a new sampling kit.",
     "tags": ["Outbound", "Tenants", "Lead", "Reply", "Variables"],
     "copyable-message": "Hi [Tenant's Forename],\n\nSorry to hear that! The kit we sent must have went missing in the post.\n\nWe'll arrange to send a replacement sampling kit to your address shortly so we can proceed with testing your water system for lead. Once it's dispatched, you should receive a confirmation email from Royal Mail.\n\nPlease keep an eye out for a small blue rectangular cardboard box—it should arrive within a week.\n\n Once it arrives, just fill the empty bottles with water from the relevant taps in your property, pop them back in the box, and send the kit back to us using the included pre-paid returns label (stick the returns label over the label on top of the box).\n\nBest regards,\n\n"
 },
 {
-    "name": "*Email Tenant - Sent Kit But We Didn't Receive",
+    "name": "*Message Tenant - Sent Kit But We Didn't Receive",
     "summary": "Send this email to tenants who sent a sampling kit if we haven't received it back yet.",
     "tags": ["Outbound", "Tenants", "Lead", "Reply", "Further Correspondence Required", "Variables"],
     "copyable-message": "Hi [Tenant's Forename],\n\nUnfortunately, we haven't received your water samples at our lab—they may have gone missing in the post.\n\nAs these samples are required for your landlord's records, we'll be sending you a replacement water sampling kit this week. It should arrive with you shortly.\n\nIf you have any questions or need help with anything, just let us know — we're happy to assist 😊\n\nAll the best,"
 },
 {
-    "name": "*Followup Email - STILL Awaiting Samples After Tenant Said They'd Send",
+    "name": "*Followup Message - STILL Awaiting Samples After Tenant Said They'd Send",
     "summary": "Send this email to tenants who sent a sampling kit if we haven't received it back yet.",
     "tags": ["Outbound", "Tenants", "Lead", "Reply", "Further Correspondence Required", "Variables"],
     "copyable-message": "Reminder: Water Samples Needed for Lead Testing\n\nHi [Tenant's Forename],\n\nThis is Kaelin from PRN Water Services, following up regarding the replacement water sampling kit we sent to you - it was delivered on [Date of Delivery].\n\nAs of today, your water samples have still not been received at the laboratory.\n\nThe sampling kits are sent with tracked return postage, but Royal Mail currently has no record of the package being returned. As deliveries typically arrive within 2–3 working days, this suggests the kit may not yet have been posted.\n\nCould you please confirm whether the samples have been posted? If not, we would appreciate it if you could let us know when you expect to return them.\n\nBest regards,"
 },
 {
-    "name": "Email Tenant - Redelivery After Tenant Not In for 1st Delivery",
+    "name": "Message Tenant - Redelivery After Tenant Not In for 1st Delivery",
     "summary": "-",
     "tags": ["Lead", "Outbound", "Tenants", "Followup", "Replacement Kit Required"],
-    "copyable-message": "Hi,\n\n[PRN Agent Name] from PRN Water Services here.\n\nI'm emailing you about the water sampling kit we sent you just over a month ago.\n\nAfter digging deeper into our Royal Mail deliveries, I've located our delivery to your address, and I've discovered that delivery was attempted on [Delivery Attempt Date] and failed because 'there didn't seem to be anyone in'.\n\nSince testing your water system for lead is a legal requirement, we'll need to send out a replacement water sampling kit.\n\nBefore we do, to avoid having the same problem, I wonder if you could either\n(a) confirm a timeframe that you're likely to be at home to accept the delivery, or\n(b) provide us with an alternative delivery address (eg: your workplace, a friends' address, a neighbours' address, a family members address, etc)?"
+    "copyable-message": "Hi,\n\n[PRN Agent Name] from PRN Water Services here.\n\nI'm contacting you about the water sampling kit we sent you just over a month ago.\n\nAfter digging deeper into our Royal Mail deliveries, I've located our delivery to your address, and I've discovered that delivery was attempted on [Delivery Attempt Date] and failed because 'there didn't seem to be anyone in'.\n\nSince testing your water system for lead is a legal requirement, we'll need to send out a replacement water sampling kit.\n\nBefore we do, to avoid having the same problem, I wonder if you could either\n(a) confirm a timeframe that you're likely to be at home to accept the delivery, or\n(b) provide us with an alternative delivery address (eg: your workplace, a friends' address, a neighbours' address, a family members address, etc)?"
 },
 {
-    "name": "Email Tenant - Sent Proof of Delivery - Fingers Crossed",
+    "name": "Message Tenant - Sent Proof of Delivery - Fingers Crossed",
     "summary": "-",
     "tags": ["Lead", "Outbound", "Tenants", "Followup", "Proof of Delivery"],
     "copyable-message": "Water Sampling Kit - Proof of Delivery\n\nHi [Tenant's Forename], as requested, I've attached a PDF Proof-of-Delivery image to this email.\n\nI've got my fingers crossed you can find it 🤞😁\n\nBest Regards,"
+},Hi Hannah,\n\nI hope you’re well. My name is Kaelin, and I’m contacting you from PRN Water Services on behalf of your letting agent, [Letting Agent].\n\nWe originally sent you a water sampling kit on [Date Sent] as part of the legal requirements for your tenancy. Unfortunately, Royal Mail were unable to deliver it due to [Reason for Delivery Failure]. The kit was then held at your local delivery office for collection, but as it wasn’t collected within the two-week holding period, it has now been returned to us.\n\nTo ensure the legal requirements are met, we’ll need to send a replacement kit to your address. Before we do so, could you please confirm whether you have any delivery preferences (e.g. a safe place, neighbour, or alternative address) to help avoid a repeat of the issue?\n\nYou can reply directly to this email, or contact us at info@prnwaterservices.com or 0141 739 0013.\n\nKaelin\nPRN Water Services
+{
+    "name": "Message Tenant - Failed Delivery & Not Collected - Replacement Kit Required",
+    "summary": "-",
+    "tags": ["Lead", "Outbound", "Tenants"],
+    "copyable-message": "},Hi [Tenant Forename],\n\nI hope you’re well. My name is Kaelin, and I’m contacting you from PRN Water Services on behalf of your letting agent, [Letting Agent].\n\nWe originally sent you a water sampling kit on [Date Sent] as part of the legal requirements for your tenancy. Unfortunately, Royal Mail were unable to deliver it due to [Reason for Delivery Failure]. The kit was then held at your local delivery office for collection, but as it wasn’t collected within the two-week holding period, it has now been returned to us.\n\nTo ensure the legal requirements are met, we’ll need to send a replacement kit to your address. Before we do so, could you please confirm whether you have any delivery preferences (e.g. a safe place, neighbour, or alternative address) to help avoid a repeat of the issue?\n\nYou can reply directly to this email, or contact us at info@prnwaterservices.com or 0141 739 0013.\n\nKaelin\nPRN Water Services"
 },
 
 
 
 
 
-
 {
-    "name": "Email Agent - 2x Delivery Failure - Can Agent Collect?",
+    "name": "Message Agent - 2x Delivery Failure - Can Agent Collect?",
     "summary": "-",
     "tags": ["Lead", "Outbound", "Agent", "Further Correspondence Required"],
     "copyable-message": "Difficulty Delivering Water Sampling Kit – [Property Address]\n\nHi [Agent Name],\n\nI hope you and the team are keeping well.\n\nWe've encountered some difficulty delivering a water sampling kit to [Property Address]. Despite posting two kits to the property, both have been returned to us by Royal Mail.\n\nWould it be possible for someone from [Letting Agency Name] to collect the water sample directly — perhaps during a scheduled inspection or visit to the property?\n\nKind regards,"
@@ -60,19 +65,19 @@
     
  
 {
-    "name": "Followup Email to Tenant - Asking Again for Sample Return Status",
+    "name": "Followup Message to Tenant - Asking Again for Sample Return Status",
     "summary": "-",
     "tags": ["Lead", "Outbound", "Tenants", "Followup"],
     "copyable-message": "Dear [Tenant Forename],\n\nI hope you're well. I'm just following up to kindly request an update regarding the return of your water samples.\n\nTesting your water supply for lead is a legal requirement, so we would appreciate receiving your samples as soon as possible to avoid any delays.\n\nThank you for your attention to this matter.\n\nKind regards,\n"
 },
 {
-    "name": "Followup Email to Tenant - 2nd Email Asking for Sample Return Info",
+    "name": "Followup Message to Tenant - 2nd Message Asking for Sample Return Info",
     "summary": "-",
     "tags": ["Tenants", "Outbound", "Further Correspondence Required", "Final Attempt"],
     "copyable-message": "2nd Reminder - Lead Testing Requirement\n\nHi [Tenant's Forename],\n\nThis is Kaelin from PRN Water Services. I'm following up for a second time regarding the water sampling kit we sent [Date of Sample Delivery]. As of today, your water samples have not yet been received at the lab.\n\nPlease confirm when you expect to return the completed samples.\n\nAs a reminder, lead testing is a legal requirement for your tenancy. If we don't hear from you or receive your samples within 7 days, we'll need to escalate the matter to your letting agent.\n\nBest regards,"
 },
 {
-    "name": "Followup Email to Tenant - Tenant THINKS They've Sent the Kit, But No Receipt and No Tracking",
+    "name": "Followup Message to Tenant - Tenant THINKS They've Sent the Kit, But No Receipt and No Tracking",
     "summary": "-",
     "tags": ["Tenants", "Outbound", "Further Correspondence Required", "Final Attempt"],
     "copyable-message": "Hi [Tenant's forename],\n\nI hope you're well.\n\nJust to confirm, we’ve not yet received your samples. Delivery typically takes no longer than three working days.\n\nUnfortunately, we don’t have any tracking information for your return. This may be because (a) the barcode wasn’t scanned via the Royal Mail app prior to posting—which is completely understandable—or (b) the kit hasn’t yet been posted back to us.\n\nIf you could kindly check whether the sampling kit is still at your property and let us know either way, it would be much appreciated.\n\nBest regards,\n"
@@ -102,13 +107,13 @@
     "copyable-message": "No contact details to contact the tenant and chase after water samples. Correspondence with letting agent required. (KH)"
 },
 {
-    "name": "Certify - Email Bounceback - Unable to Contact Tenant",
+    "name": "Certify - Message Bounceback - Unable to Contact Tenant",
     "summary": "-",
     "tags": ["Certify Note", "Lead", "Contact Failure", "Tenants", "Correspondence With Letting Agent Required"],
     "copyable-message": "My email bounced back because the tenant's email address is invalid. Unable to contact tenant. (KH)"
 },
 {
-    "name": "Certify - Tenant's Phone Number is Invalid - Email Sent",
+    "name": "Certify - Tenant's Phone Number is Invalid - Message Sent",
     "summary": "-",
     "tags": ["Certify Note", "Lead", "Tenants", "Outbound", "Further Correspondence Required"],
     "copyable-message": "Tenant's phone number is invalid, so I've sent an email chasing after water samples (KH)"
@@ -288,19 +293,19 @@
 
 
 {
-    "name": "Certify - Outbound Email - Sent a 2nd Email Asking for Sample Return Info",
+    "name": "Certify - Outbound Message - Sent a 2nd Message Asking for Sample Return Info",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Further Correspondence Required", "Final Attempt"],
     "copyable-message": "Sent a second email asking for an update regarding their water samples. (KH)"
 },
 {
-    "name": "Certify - Outbound Email - Sent Tenant Proof of Delivery",
+    "name": "Certify - Outbound Message - Sent Tenant Proof of Delivery",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Further Correspondence Required", "Proof of Delivery"],
     "copyable-message": "Sent Royal Mail proof of delivery to the tenant. (KH)"
 },
 {
-    "name": "Certify - Tenant's Phone Switched Off - Seent an Email",
+    "name": "Certify - Tenant's Phone Switched Off - Seent an Message",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Further Correspondence Required"],
     "copyable-message": "Tried phoning the tenent to chase after samples, but the automated voice told me 'this person's phone is switched off, please try again later'. Sent an email instead. (KH)"
@@ -312,52 +317,52 @@
 
     
 {
-    "name": "Certify - Phoned Tenant - Dial Tone. Sent Email.",
+    "name": "Certify - Phoned Tenant - Dial Tone. Sent Message.",
     "summary": "Add this comment to certify if the phone went to a dial tone.",
     "tags": ["Certify Note", "Tenants", "Outbound", "Outbound", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Stopped Ringing. Sent Email.",
+    "name": "Certify - Phoned Tenant - Stopped Ringing. Sent Message.",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Call Failure", "Outbound", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and after some rings it went to a dial tone. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Number Not In Service - Sent Email.",
+    "name": "Certify - Phoned Tenant - Number Not In Service - Sent Message.",
     "summary": "Add this comment to certify if the phone number is noot is not in service.",
     "tags": ["Certify Note", "Tenants", "Outbound", "Outbound", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice informed me that this number is not in service. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Not Possible to Connect Call - Sent Email.",
+    "name": "Certify - Phoned Tenant - Not Possible to Connect Call - Sent Message.",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Outbound", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase about sampling kit, and the automated voice said 'It has not been possible to connect your call. Please try again later'. Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Call Cannot Be Completed - Sent Email.",
+    "name": "Certify - Phoned Tenant - Call Cannot Be Completed - Sent Message.",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Call Failure", "Outbound", "Further Correspondence Required"],
     "copyable-message": "Phoned to chase after sampling kit, and the automated voice told me 'This call cannot be completed at this time. Please hang up and try again later'. Sent an email instead (KH)   "
 },
 {
-    "name": "Certify - Phoned Tenant - Number Currently Unavailable - Sent Email.",
+    "name": "Certify - Phoned Tenant - Number Currently Unavailable - Sent Message.",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Call Failure", "Outbound", "Further Correspondence Required"],
     "copyable-message": "Phoned the tenant to ask for an update regarding their sampling kit, and the automated voice told me 'The number you've dialed is currently unavailable. Please try again later' Due to uncertainty about the phone number, I sent an email. (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Voicemail Turned Off - Sent Email",
+    "name": "Certify - Phoned Tenant - Voicemail Turned Off - Sent Message",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Call Failure", "Outbound", "Further Correspondence Required"],
-    "copyable-message": "Phoned to chase after sampling kit, and the automated voice informed me that this person's voicemail is turned off, and that I can't leave a message. Email sent (KH)"
+    "copyable-message": "Phoned to chase after sampling kit, and the automated voice informed me that this person's voicemail is turned off, and that I can't leave a message. Message sent (KH)"
 },
 {
-    "name": "Certify - Phoned Tenant - Number Cannot be Completed or Dialed - Sent Email",
+    "name": "Certify - Phoned Tenant - Number Cannot be Completed or Dialed - Sent Message",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Call Failure", "Outbound", "Further Correspondence Required"],
-    "copyable-message": "Phoned to chase about sampling kit, and the American automated voice said 'one number cannot be completed or dialled'. Sent an Email instead. (KH)"
+    "copyable-message": "Phoned to chase about sampling kit, and the American automated voice said 'one number cannot be completed or dialled'. Sent an Message instead. (KH)"
 },
 
 
@@ -366,7 +371,7 @@
 
 
 {
-    "name": "Certify - Sent a Followup Email Asking for Sample Return Status",
+    "name": "Certify - Sent a Followup Message Asking for Sample Return Status",
     "summary": "-",
     "tags": ["Lead", "Outbound", "Tenants", "Followup", "Further Correspondence Required"],
     "copyable-message": "Sent another email to chase after samples. (KH)"
@@ -401,10 +406,10 @@
     "copyable-message": "Tenant replied and said they'd send the samples back to us ASAP. (KH)"
 },
 {
-    "name": "Certify - Tenant Reply - No Knowledge of Delivery - Will Email Pic of Delivery",
+    "name": "Certify - Tenant Reply - No Knowledge of Delivery - Will Message Pic of Delivery",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Tenant Reply", "Further Correspondence Required", "To Send Evidence"],
-    "copyable-message": "Tenant replied to say that they don't think they received the sampling kit. After checking Royal Mail, I confirmed that they did receive the sampling kit, and told them the date it was delivered. After further expressions of cluelessness, I said I'd send an Email with a picture of the sampling kit being delivered to their property in hopes it jogs their memory. (KH)"
+    "copyable-message": "Tenant replied to say that they don't think they received the sampling kit. After checking Royal Mail, I confirmed that they did receive the sampling kit, and told them the date it was delivered. After further expressions of cluelessness, I said I'd send an Message with a picture of the sampling kit being delivered to their property in hopes it jogs their memory. (KH)"
 },
 {
     "name": "Certify - Tenant Reply - Did Scottish Water Test, Will Look for Our Kit to Send Us.",
@@ -539,28 +544,28 @@
 
 
 {
-    "name": "Certify - No Tenant Phone Number - Email Sent Chasing Sampling Kits",
+    "name": "Certify - No Tenant Phone Number - Message Sent Chasing Sampling Kits",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "There is no phone number available for the tenant, so I've sent an email chasing up the sampling kits. (KH)"
 },
 {
-    "name": "Certify - Voicemail Uncertainty - Email Sent",
+    "name": "Certify - Voicemail Uncertainty - Message Sent",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Voicemail", "Outbound", "Call Failure", "Further Correspondence Required"],
     "copyable-message": "Was recording a voiceemail to chase the tenant up about the sampling kit, but the call seemed to be disconnected mid-recording. Due to uncertainty about the status of the voicemail, I sent the tenant an email. (KH)"
 },
 {
-    "name": "Certify - Emailed Tenant for Delivery Timeframe or Alternative Address",
+    "name": "Certify - Messageed Tenant for Delivery Timeframe or Alternative Address",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Returned to Sender", "Replacement Kit Required", "Outbound", "Further Correspondence Required"],
     "copyable-message": "Phoned tenant to chase about sampling kit and they didn't receive it due to failed delivery because the tenant wasn't home. Sent an email asking for a suitable delivery timeframe, or an alternative delivery address. (KH)"
 },
 {
-    "name": "Certify - Email Received - Proposed Delivery Tomorrow - Inadequate for RM",
+    "name": "Certify - Message Received - Proposed Delivery Tomorrow - Inadequate for RM",
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Reply", "Further Correspondence Required"],
-    "copyable-message": "The tenant Emailed back to say he'll be home tomorrow and that it would be a suitable date for delivery. However, this isn't adequate notice for Royal Mail, so I replied explaining that they require 2–3 days' notice to allow for delivery. Awaiting response. (KH)"
+    "copyable-message": "The tenant Messageed back to say he'll be home tomorrow and that it would be a suitable date for delivery. However, this isn't adequate notice for Royal Mail, so I replied explaining that they require 2–3 days' notice to allow for delivery. Awaiting response. (KH)"
 },
 
 
