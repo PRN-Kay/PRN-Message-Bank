@@ -40,7 +40,7 @@
     "summary": "-",
     "tags": ["Lead", "Outbound", "Tenants", "Followup", "Proof of Delivery"],
     "copyable-message": "Water Sampling Kit - Proof of Delivery\n\nHi [Tenant's Forename], as requested, I've attached a PDF Proof-of-Delivery image to this email.\n\nI've got my fingers crossed you can find it 🤞😁\n\nBest Regards,"
-},Hi Hannah,\n\nI hope you’re well. My name is Kaelin, and I’m contacting you from PRN Water Services on behalf of your letting agent, [Letting Agent].\n\nWe originally sent you a water sampling kit on [Date Sent] as part of the legal requirements for your tenancy. Unfortunately, Royal Mail were unable to deliver it due to [Reason for Delivery Failure]. The kit was then held at your local delivery office for collection, but as it wasn’t collected within the two-week holding period, it has now been returned to us.\n\nTo ensure the legal requirements are met, we’ll need to send a replacement kit to your address. Before we do so, could you please confirm whether you have any delivery preferences (e.g. a safe place, neighbour, or alternative address) to help avoid a repeat of the issue?\n\nYou can reply directly to this email, or contact us at info@prnwaterservices.com or 0141 739 0013.\n\nKaelin\nPRN Water Services
+},
 {
     "name": "Message Tenant - Failed Delivery & Not Collected - Replacement Kit Required",
     "summary": "-",
@@ -283,6 +283,12 @@
     "summary": "-",
     "tags": ["Certify Note", "Tenants", "Outbound", "Call Failure", "Outbound", "Further Correspondence Required"],
     "copyable-message": "Left a 2nd voicemail and sent a 2nd text asking for an update regarding their sampling kit, mentioning that this issue will be escaleted to their letting agent if we don't hear from them or receive their samples soon. (KH)."
+},
+{
+    "name": "Certify - Tenant Confirming Work Order With Letting Agent",
+    "summary": "-",
+    "tags": ["Certify Note", "Lead", "Further Correspondence Required"],
+    "copyable-message": "Tenant has asked letting agent to confirm they instructed this order. (KH)"
 },
 
 
