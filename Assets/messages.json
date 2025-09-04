@@ -232,10 +232,10 @@
     "copyable-message": "Phoned the tenant - [Full Tenant Name] to chase after sampling kit, and they told me that they're moving out today, and won't have time to send the sampling kit to us.  (KH (KH)"
 },
 {
-    "name": "*Certify - Phoned Tenant - Moved Out",
+    "name": "*Certify - Tenant Moved Out",
     "summary": "-",
-    "tags": ["Certify Note", "Tenants", "Outbound", "Tenant Moved Out", "Correspondence With Letting Agent Required", "Variables"],
-    "copyable-message": "Phoned the tenant - [Full Tenant Name] - who told me that they no longer live in this property. I told them I'd remove their details from our system, which I did. ([PRN Agent Initials])"
+    "tags": ["Certify Note", "Tenants", "Tenant Moved Out", "Variables"],
+    "copyable-message": "Tenant - [Full Tenant Name] - told me that they no longer live in this property. Details removed from Certify (KH)"
 },
 {
     "name": "*Certify - Phoned Tenant - Moved Out - Sampes Given to Agent",
