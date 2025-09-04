@@ -130,7 +130,12 @@
     "tags": ["Certify Note", "Lead", "Replacement Kit Required"],
     "copyable-message": "Told tenant that, since we still haven't received their sampling kit, we'll need to send them a replacement. (KH)"
 },
-
+{
+    "name": "Certify - Tenant Lost Kit - Replacement Required",
+    "summary": "-",
+    "tags": ["Certify Note", "Lead", "Replacement Kit Required"],
+    "copyable-message": "Tenant has lost the sampling kit. Replacement kit required (KH)"
+},
 
 
 
